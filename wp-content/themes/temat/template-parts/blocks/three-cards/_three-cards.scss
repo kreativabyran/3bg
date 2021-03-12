@@ -1,0 +1,105 @@
+#kb-blocks-three-cards {
+	// padding: $block-padding;
+	padding-top: $block-padding;
+	padding-bottom: $block-padding;
+	h1 {
+		// font-size: 26px;
+	}
+	div.kb-title .col {
+		text-align: center;
+		h2 {
+			// font-size: 40px;
+		}
+	}
+
+	div .kb-cards {
+		div {
+			padding-top: 15px;
+			.kb-beige-box {
+					padding-top: $block-padding;
+					height: 100%;
+					margin-bottom: 60px;
+					@media(max-width: 1028px)  {
+						margin-bottom: 0px;
+					}
+
+					.kb-card-title {
+						text-align: start;
+						// font-size: 35px;
+						color: $olive;
+					}
+
+					div.kb-image-container {
+						position: absolute;
+						// background: $green;
+						max-width: 221px;
+						text-align: center;
+
+						@media(min-width: 1029px) {
+							right: 30px;
+							bottom: 40px;
+						}
+						// @media(max-width: 1028px) {
+						// 	right: 30px;
+						// 	bottom: 40px;
+						// }
+
+						@media(max-width: 1028px) and (min-width: 992px) {
+							position: relative;
+							align-self: flex-end;
+						}
+
+						@media(max-width: 991px) {
+							position: absolute;
+							right: 100px;
+							bottom: 40px;
+							max-width: 300px;
+						}
+						@media(max-width: 768px) {
+							position: absolute;
+							right: 30px;
+							// bottom: 40px;
+							max-width: 300px;
+						}
+
+						@media(max-width: 375px) {
+							position: relative;
+							align-self: flex-end;
+							right: 0px;
+							bottom: 0px;
+						}
+
+						img.kb-position-bottom-right {
+							@media(max-width: 1440px) {
+								max-height: 100px;
+							}
+							@media(max-width: 1140px) {
+								max-height: 90px;
+							}
+							@media(max-width: 991px) {
+								max-height: 130px;
+							}
+							// @media(max-width: 767) {
+							// 	max-height: 130px;
+							// }
+							@media(max-width: 596px){
+								max-height: 100px;
+							}
+
+							max-height: 100px;
+						}
+					}
+				}
+		}
+	}
+	div.kb-button-container {
+			text-align: center;
+			padding-top: 35px;
+			.kb-arrow-up-after {
+
+				&:after {
+					content: ' ↑';
+				}
+			}
+		}
+}

@@ -1,0 +1,77 @@
+.wp-block-group.order-today-container {
+  max-width: $outer-max-width;
+  margin: auto;
+  padding: 3rem 30px;
+  .wp-block-image {
+    margin: 0;
+  }
+}
+
+.order-today {  
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: $red-light;
+  padding: $main-padding $main-padding 40px $main-padding;  
+  border-radius: 5px;
+  word-break: keep-all !important;
+
+  h1, h2, h3, h4, h5 {
+    font-size: 40px;
+  }
+  h4 {
+    padding-top: 0.5rem;
+  }
+  ul {
+    border-bottom: 1px solid $border;
+    padding-bottom: 0.5em;
+    li {
+      margin-left: -14px;
+    }
+  }
+
+  .price {
+    align-self: flex-end;
+    text-align: end;
+    p {
+      margin-bottom: 1.2em;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .wp-block-group.order-today-container {
+    width: 100%;
+    .wp-block-columns {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .order-today {
+    h1, h2, h3, h4, h5 {
+      font-size: 30px;
+    }
+    li {
+      font-size: 0.8rem;
+    }
+    .price {
+      align-self: center;
+      a.pr-btn {
+        font-size: 0.7rem;
+      }
+    }
+
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .wp-block-group.order-today-container {
+    .wp-block-column:nth-child(2n) {
+        margin-left: 0;
+    }
+  }
+}
+

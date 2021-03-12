@@ -1,0 +1,170 @@
+/*!
+Theme Name: Temat
+Author: Kreativa Byr&aring;n
+Author URI: http://kreativabyran.se
+Version: 3.0
+Text Domain: temat
+Description: Kreativa Byr&aring;ns tema utvecklat f&ouml;r Wordpress 5.0 eller nyare.
+*/
+@import "css/hamburgers/hamburgers.scss";
+// @import "css/tools/grid";
+// @import "css/bootstrap.min";
+// @import "css/bootstrap-select.min";
+// @import "css/flexboxgrid";
+
+// Tools
+@import "css/tools/variables";  //Variabler
+@import "css/tools/mixins";     //Mixins
+@import "css/tools/helpers";    //Helpers
+@import "css/tools/slick";      //Slick slider
+
+html {
+	font-size: 18px;
+}
+
+body {
+	font-size: 100%;
+	margin: 0;
+}
+
+h1,
+.h1 {
+	font-size: 2.22222em;
+}
+
+h2,
+.h2 {
+	font-size: 1.66667em; // 30px
+}
+
+h3,
+.h3 {
+	font-size: 1.4em; // 31.5px
+}
+
+h4,
+.h4 {
+	font-size: 1.3em; // 27px
+}
+
+h5,
+.h5 {
+	font-size: 1.2em; // 22.5px
+}
+
+h6,
+.h6 {
+	font-size: 1rem; // 18px
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	margin-bottom: 0.5em;
+	line-height: 1.3;
+}
+
+img {
+	max-width: 100%;
+}
+
+p,
+li {
+	font-size: 1em;
+	line-height: 1.3em;
+}
+
+dl,
+ul,
+ol {
+	padding-left: 1.5em;
+}
+
+// ########  ##        #######   ######  ##    ##  ######
+// ##     ## ##       ##     ## ##    ## ##   ##  ##    ##
+// ##     ## ##       ##     ## ##       ##  ##   ##
+// ########  ##       ##     ## ##       #####     ######
+// ##     ## ##       ##     ## ##       ##  ##         ##
+// ##     ## ##       ##     ## ##    ## ##   ##  ##    ##
+// ########  ########  #######   ######  ##    ##  ######
+
+
+//    ###    ########   ######  ##     ## #### ##     ## ########
+//   ## ##   ##     ## ##    ## ##     ##  ##  ##     ## ##
+//  ##   ##  ##     ## ##       ##     ##  ##  ##     ## ##
+// ##     ## ########  ##       #########  ##  ##     ## ######
+// ######### ##   ##   ##       ##     ##  ##   ##   ##  ##
+// ##     ## ##    ##  ##    ## ##     ##  ##    ## ##   ##
+// ##     ## ##     ##  ######  ##     ## ####    ###    ########
+body.blog,
+body.search,
+body.archive,
+body.error404,
+body.single-post {
+
+	main.site-main {
+		padding: 2.5em 0;
+	}
+}
+
+//  ######   #######  ##     ## ##     ## ######## ##    ## ########  ######
+// ##    ## ##     ## ###   ### ###   ### ##       ###   ##    ##    ##    ##
+// ##       ##     ## #### #### #### #### ##       ####  ##    ##    ##
+// ##       ##     ## ## ### ## ## ### ## ######   ## ## ##    ##     ######
+// ##       ##     ## ##     ## ##     ## ##       ##  ####    ##          ##
+// ##    ## ##     ## ##     ## ##     ## ##       ##   ###    ##    ##    ##
+//  ######   #######  ##     ## ##     ## ######## ##    ##    ##     ######
+ol.comment-list {
+	padding: 0;
+	list-style: none;
+
+	li ol.children {
+		list-style: none;
+	}
+}
+
+.comment-respond {
+
+	form.comment-form {
+
+		p.comment-notes .required {
+			color: #f00;
+		}
+
+		p.comment-form-comment,
+		p.comment-form-author,
+		p.comment-form-email {
+
+			label {
+
+				.required {
+					color: #f00;
+				}
+			}
+
+			input[type="email"],
+			input[type="text"],
+			textarea {
+				width: 100%;
+				max-width: 100%;
+			}
+		}
+	}
+}
+
+// ########  #######   #######  ######## ######## ########
+// ##       ##     ## ##     ##    ##    ##       ##     ##
+// ##       ##     ## ##     ##    ##    ##       ##     ##
+// ######   ##     ## ##     ##    ##    ######   ########
+// ##       ##     ## ##     ##    ##    ##       ##   ##
+// ##       ##     ## ##     ##    ##    ##       ##    ##
+// ##        #######   #######     ##    ######## ##     ##

@@ -31,7 +31,7 @@ wp-content/*
 !wp-content/mu-plugins/
 !wp-content/themes/
 wp-content/themes/*
-!wp-content/themes/Divi
-!wp-content/themes/3bg
+!wp-content/themes/temat
+!wp-content/themes/temat-child
 node_modules/
 meta_box/

@@ -1,0 +1,36 @@
+#kb-blocks-contact-form {
+  padding-top: $block-padding;
+	padding-bottom: $block-padding;
+  background-image: linear-gradient(to right, $blue , $green);
+
+  div.container {
+    h2 {
+      color: white;
+      margin-bottom: 22px;
+    }
+    form {
+      div.kb-row {
+        text-align: center;
+        div {
+          @media(max-width: 576px) {
+            padding-left: 25px;
+            padding-right: 25px;
+          }
+          padding: 0px;
+          margin: 7px;
+          input[type=text] {
+            background-color: rgba(255, 255, 255, 0.3);
+            border: 1px solid $white;
+            border-radius: $input-radius;
+            color: white;
+            padding: 10px;
+            width: 100%;
+          }
+          input[type=text]::placeholder {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}

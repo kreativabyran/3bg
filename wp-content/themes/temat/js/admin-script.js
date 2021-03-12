@@ -1,0 +1,1 @@
+jQuery(document).ready(function($){if($('.lazy').length){$('.lazy').Lazy()}});

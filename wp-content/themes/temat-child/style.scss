@@ -1,0 +1,25 @@
+/*!
+Theme Name: Temat Child
+Template: temat
+Text Domain: temat-child
+*/
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Text&display=swap");
+@import "../temat/css/tools/mixins";
+@import "../temat/css/hamburgers/hamburgers";
+@import "css/variables";
+@import "css/slick";
+@import "css/flexboxgrid";
+@import "css/general";
+@import "css/menu";
+@import "css/404";
+@import "css/footer";
+@import "css/article";
+@import "css/author";
+@import "css/login";
+@import "css/hero";
+@import "acf/blocks/editors-list/style";
+@import "acf/blocks/free-articles/style";
+@import "acf/blocks/packages/style";
+@import "acf/blocks/quote-slider/style";
+@import "acf/blocks/covers/style";
+@import "acf/blocks/order-today/style";

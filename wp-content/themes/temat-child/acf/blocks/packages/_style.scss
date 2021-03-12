@@ -1,0 +1,121 @@
+
+
+.packages {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: flex-end;
+  height: 500px;
+  background: $gray-light;
+  border-radius: 7px;
+  word-break: keep-all;
+
+	> div {
+		background: $red-light;
+		border-bottom-left-radius: 7px;
+		border-bottom-right-radius: 7px;
+    padding: $main-padding;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    min-height: 235px;
+
+    .package-left {
+      h4 {
+        font-family: $dm-sans;
+        font-size: 1.5rem;
+        font-weight: 500;
+      }
+
+      ul {
+        margin-left: -14px;
+        margin-bottom: 0;
+        margin-top: 0.6rem;
+        li {
+          font-size: 0.85rem;
+        }
+      }
+    }
+
+    .package-right {
+      align-self: flex-end;
+      justify-content: flex-end;
+      margin-bottom: 10px;
+      > div {
+        text-align: end;
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+      a.pr-btn {
+        background: #0076ff;
+        max-width: 140px;
+        display: block;
+        font-size: 0.9rem;
+      }
+    }
+	}
+}
+
+@media (max-width: 1130px) {
+  .packages {
+    > div {
+      flex-direction: column;
+      flex-wrap: wrap;
+      min-height: 300px;
+      ul {
+        width: 100%;
+      }
+      .package-right {
+        justify-self: flex-start;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+        width: 100%;
+        margin-bottom: 0;
+        > div {
+          margin-bottom: 0;
+        }
+      }
+      a.pr-btn {
+        justify-self: start;
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media(max-width: 825px) {
+  .wp-block-columns.packages-flex {
+    flex-direction: column;
+    align-items: center;
+    > div {
+      margin-left: 0 !important;
+    }
+  }
+  
+  .packages {
+    min-width: 90vw;
+    height: 450px;
+
+    > div {
+      min-height: unset !important;
+
+      .package-left {
+        h4 {
+          font-size: 1.2rem;
+        }
+        ul {
+          li {
+            font-size: 0.75rem;
+          }
+        }
+      }
+      .package-right {
+        .pr-btn {
+          padding: 0.43rem 1.35rem;
+        }
+      }
+    }
+  }
+}

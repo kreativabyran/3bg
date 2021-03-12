@@ -1,0 +1,39 @@
+#scroll_to_top {
+	background-color: #000;
+	-webkit-border-radius: 5%;
+	-moz-border-radius: 5%;
+	border-radius: 5%;
+	box-sizing: content-box;
+	bottom: 20px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 32px;
+	font-weight: normal;
+	height: 32px;
+	padding: 5px;
+	position: fixed;
+	right: 20px;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+	width: 32px;
+	z-index: 9999;
+	opacity: 0;
+	opacity: 0.2;
+	-webkit-transition: opacity 0.2s ease-in-out;
+	transition: opacity 0.2s ease-in-out;
+	visibility: hidden;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADkAAAAiCAYAAADlCXHdAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQ1IDc5LjE2MzQ5OSwgMjAxOC8wOC8xMy0xNjo0MDoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkYwMkQxNDVDRThFQjExRTk5MjZGODA3RkI3ODlEQTQ1IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkYwMkQxNDVERThFQjExRTk5MjZGODA3RkI3ODlEQTQ1Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RjAyRDE0NUFFOEVCMTFFOTkyNkY4MDdGQjc4OURBNDUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RjAyRDE0NUJFOEVCMTFFOTkyNkY4MDdGQjc4OURBNDUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7+9s+MAAABF0lEQVR42szZQQqDMBQEUJXZ9g49RI8kuOthuiv1Dr1ID+G6uOsBbAIKFpoGa/78CQzGhSTPH4mQepqmitjaVb9nDdqQgaeQ23xtWQODDOzm+45ZUTgAKzYUTkAqFI5AGhTOQAoUAkBzKESAplAIAc2gEAOaQCEILA6FKLAotHEA3v+A7vrXBRl4DXmEPDc+u6uicAD2icmbQeEEpELhVEEqFE5AKhSOQBoUzkAKFAJAcyhEgKZQCAHNoBADmkAhCCwOhSiwKBTCwGJQiAOLQCNyDHmFHESBe6DRNdbzqVZcsseQcwbrBdy6A0TcJWRYvsn1Wxp+YBWAuYp+4FL7ZAqrAkxBv+KWVmcOYV0OTTcu3ez83gIMABx4jdzXQRE/AAAAAElFTkSuQmCC);
+	background-position: center;
+	background-size: 23px;
+	background-repeat: no-repeat;
+
+	&.show {
+		opacity: 0.5;
+		visibility: visible;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+}
