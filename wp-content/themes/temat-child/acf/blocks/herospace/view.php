@@ -9,7 +9,7 @@
 				<?php endif; ?>
 				<?php $button = get_field( 'button' ); ?>
 				<?php if ( $button ) : ?>
-					123
+					HELLO WORLD
 					<?php print_r( $button ); ?>
 				<?php endif; ?>
 			</div>
