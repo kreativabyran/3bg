@@ -9,8 +9,12 @@
 				<?php endif; ?>
 				<?php $button = get_field( 'button' ); ?>
 				<?php if ( $button ) : ?>
-					HELLO WORLD
-					<?php print_r( $button ); ?>
+					<a
+						role="button"
+						href="<?php echo esc_attr( $button['url'] ); ?>"
+						target="<?php echo $button['target'] === '_blank' ? '_blank' : '_self'; ?>">
+						<?php echo esc_html( $button['title'] ); ?>
+					</a>
 				<?php endif; ?>
 			</div>
 		</div>
