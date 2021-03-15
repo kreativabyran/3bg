@@ -6,25 +6,13 @@
 	box-sizing: border-box;
 }
 
-button[aria-selected="true"] {
-	background: $blue;
-	color: #fff;
-	border: 1px solid $blue;
-}
-
 html {
-	font-family: $dm-sans;
-	font-size: 24px;
-
-	@media (max-width: 991.98px) {
-		font-size: 22px;
-	}
+	font-size: 18px;
 }
 
 body {
-	font-size: 100%;
-	-webkit-font-smoothing: antialiased;
 	margin: 0;
+	font-size: 100%;
 }
 
 h1,
@@ -40,55 +28,31 @@ h6,
 .h5,
 .h6 {
 	-webkit-font-smoothing: antialiased;
-	line-height: 1.05;
-	margin: 0;
-	font-family: $dm-serif;
-	font-weight: 400;
 }
 
 h1,
 .h1 {
-	font-size: 2.08rem; // 50px
 
-	@media (max-width: 991.98px) {
-		font-size: 1.545rem; // 34px
-	}
 }
 
 h2,
 .h2 {
-	font-size: 2.083rem; // 50px
 
-	@media (max-width: 991.98px) {
-		font-size: 1.545rem; // 34px
-	}
 }
 
 h3,
 .h3 {
-	font-size: 1.666rem; // 40px
 
-	@media (max-width: 991.98px) {
-		font-size: 1.363rem; // 30px
-	}
 }
 
 h4,
 .h4 {
-	font-size: 1.3333rem; // 32px
 
-	@media (max-width: 991.98px) {
-		font-size: 1.181rem;  // 26px
-	}
 }
 
 h5,
 .h5 {
-	font-size: 1.083rem; // 26px
 
-	@media (max-width: 991.98px) {
-		font-size: 1rem; // 22px
-	}
 }
 
 
@@ -98,8 +62,6 @@ input,
 a,
 span {
 	font-size: 1rem;
-	line-height: 1.33;
-	color: $text;
 }
 
 p,
@@ -122,100 +84,15 @@ img {
 button,
 label,
 input {
-	font-family: $dm-sans;
-	font-weight: 500;
-	font-size: 0.9rem;
+
 }
 
-p.is-style-entry {
-	font-family: $dm-serif;
-	margin-top: 0.5rem;
-}
-
-p.is-style-arrowlink a,
-a {
-	color: $blue;
-	padding-right: 1em;
-	position: relative;
-	text-decoration: none;
-	font-weight: 500;
-
-	&::after {
-		content: "";
-		position: absolute;
-		right: 0;
-		top: 55%;
-		transform: translate(-50%, -50%);
-		width: 0.5em;
-		height: 0.5em;
-		display: block;
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-image: url(img/arrow.svg);
-	}
-
-	&:hover {
-		text-decoration: underline;
-		text-decoration-style: dotted;
-	}
-}
-
-p.is-style-arrowlinkdown a {
-  &::after {
-		content: "";
-		position: absolute;
-		right: -1.3rem;
-		top: 55%;
-		transform: translate(-50%, -50%) rotate(90deg);
-		width: 0.6em;
-		height: 0.6em;
-		display: block;
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-image: url(img/arrow.svg);
-	}
-}
-
-// Remove arrow
-
-ul.nav-menu li a::after {
-	display: none;
-}
-
-a.wp-block-button__link::after {
-	display: none;
-}
-
-p a {
-	padding-right: 0;
-
-	&::after {
-		display: none;
-	}
-}
-
-div > a::after {
-	display: none;
-}
-
-.ab-top-menu li a::after {
-	display: none;
-}
-
-// Big link
-p.is-style-biglink a {
-	font-size: 1.4rem;
-	text-decoration: underline;
-	text-decoration-style: dotted;
-}
-
-// Container settings
-
-.wp-block-group.is-style-container > .wp-block-group__inner-container,
-.wp-block-group.is-style-small > .wp-block-group__inner-container {
-	padding-left: $main-padding;
-	padding-right: $main-padding;
+.wp-block-group.is-style-container > .wp-block-group__inner-container {
+	max-width: $outer-max-width;
+	width: 100%;
 	margin: auto;
+	padding-right: $main-padding;
+	padding-left: $main-padding;
 
 	@media (max-width: 767.89px) {
 		padding-right: calc(#{$main-padding} - 10px);
@@ -223,61 +100,12 @@ p.is-style-biglink a {
 	}
 }
 
+.wp-block-group.is-style-container-fluid > .wp-block-group__inner-container {
+	padding-right: $main-padding;
+	padding-left: $main-padding;
 
-.wp-block-group.is-style-container > .wp-block-group__inner-container {
-	max-width: $outer-max-width;
-}
-
-.wp-block-group.is-style-small > .wp-block-group__inner-container {
-	max-width: calc(#{$inner-max-width} + #{$main-padding * 2});
-}
-
-.wp-block-group {
-	padding-top: 3rem;
-	padding-bottom: 3rem;
-
-	.wp-block-buttons {
-		margin-top: 1rem;
+	@media (max-width: 767.89px) {
+		padding-right: calc(#{$main-padding} - 10px);
+		padding-left: calc(#{$main-padding} - 10px);
 	}
-}
-
-.wp-block-columns {
-	margin-bottom: 0;
-}
-
-// BUTTONS
-
-.wp-block-button__link,
-.pr-btn,
-#wp-submit {
-	background: $blue;
-	color: #fff;
-	border: none;
-	padding: 0.53rem 1.45rem;
-	border-radius: 5px;
-	font-size: 0.95rem;
-	box-shadow: 0 2px 0 rgba(0, 26, 57, 0.25);
-	cursor: pointer;
-	transition: background 0.2s cubic-bezier(0.22, 0.61, 0.36, 1), box-shadow 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
-
-	&:hover {
-		text-decoration: none;
-		background: $blue-light;
-		box-shadow: none;
-	}
-}
-
-#loading-icon {
-	margin: 0.5rem auto 0;
-	width: 30px;
-}
-
-input[type="text"],
-input[type="password"] {
-	border: 1px solid $blue;
-	border-radius: 5px;
-	height: 2.291rem;
-	width: 100%;
-	box-shadow: 0 2px 0 #00000029;
-	padding: 0 0.75rem;
 }

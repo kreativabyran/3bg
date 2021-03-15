@@ -22,63 +22,15 @@ add_action(
 			$options = new FieldsBuilder( 'anpassningar' );
 			$options
 			->addTab(
-				'forms',
+				'404',
 				array(
-					'label' => 'Formulär',
+					'label' => '404',
 				)
 			)
 			->addWysiwyg(
-				'thanks_message',
+				'404_text',
 				array(
-					'label' => 'Tackmeddelande',
-				)
-			)
-			->addTextarea(
-				'help_message',
-				array(
-					'label' => ' Hjälpmeddelande',
-				)
-			)
-			->addTab(
-				'order',
-				array(
-					'label' => 'Beställningar',
-				)
-			)
-			->addWysiwyg(
-				'order_text',
-				array(
-					'label' => 'Beställningstext',
-				)
-			)
-			->addText(
-				'order_price',
-				array(
-					'label' => 'Beställningspris',
-				)
-			)
-			->addText(
-				'order_button',
-				array(
-					'label' => 'Knapptext',
-				)
-			)
-			->addWysiwyg(
-				'free_article_text',
-				array(
-					'label' => 'Text på gratisartikel',
-				)
-			)
-			->addTab(
-				'article',
-				array(
-					'label' => 'Artiklar',
-				)
-			)
-			->addWysiwyg(
-				'free_article',
-				array(
-					'label' => 'Banner gratisartiklar',
+					'label' => 'Text',
 				)
 			)
 			->setLocation( 'options_page', '==', 'theme-options' );

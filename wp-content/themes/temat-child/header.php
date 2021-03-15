@@ -28,7 +28,6 @@
 							</button>
 							<div class="temat-primary-menu-container">
 								<?php
-								if ( ! is_user_logged_in() ) {
 									if ( has_nav_menu( 'primary-menu' ) ) {
 										wp_nav_menu(
 											array(
@@ -38,17 +37,6 @@
 											)
 										);
 									}
-								} else {
-									if ( has_nav_menu( 'logedin-menu' ) ) {
-										wp_nav_menu(
-											array(
-												'container' => false,
-												'theme_location' => 'logedin-menu',
-												'menu_id' => 'primary-menu',
-											)
-										);
-									}
-								}
 								?>
 							</div>
 						</nav>

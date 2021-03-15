@@ -165,7 +165,7 @@ if ( ! function_exists( 'temat_setup' ) ) :
 
 		register_nav_menus(
 			array(
-				'logedin-menu' => esc_html__( 'Inloggad', 'temat' ),
+				'top-menu' => esc_html__( 'Topmeny', 'temat' ),
 			)
 		);
 

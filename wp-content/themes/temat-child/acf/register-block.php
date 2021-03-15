@@ -13,40 +13,8 @@ use StoutLogic\AcfBuilder\FieldsBuilder;
  */
 function my_acf_init_block_types() {
 	t_create_block(
-		'quote-slider',
-		__( 'Citatslider', 'temat-child' )
-	);
-	t_create_block(
-		'free-articles',
-		__( 'Gratisartiklar', 'temat-child' )
-	);
-	t_create_block(
-		'packages',
-		__( 'Paket', 'temat-child' )
-	);
-	t_create_block(
-		'editors-list',
-		__( 'Redaktioner', 'temat-child' )
-	);
-	t_create_block(
-		'latest-post',
-		__( 'Senaste artiklar', 'temat-child' )
-	);
-	t_create_block(
-		'categories',
-		__( 'Kategorier', 'temat-child' )
-	);
-	t_create_block(
-		'article-by-categories',
-		__( 'Artiklar i kategori', 'temat-child' )
-	);
-	t_create_block(
-		'covers',
-		__( 'Omslag', 'temat-child' )
-	);
-	t_create_block(
-		'order-today',
-		__( 'Beställ idag', 'temat-child' )
+		'herospace',
+		__( 'Herospace', 'temat-child' )
 	);
 }
 add_action( 'acf/init', 'my_acf_init_block_types' );
@@ -82,38 +50,5 @@ function t_create_block( $name, $title ) {
 				'icon'            => $icon,
 			)
 		) );
-	}
-}
-
-
- add_action( 'acf/init', 'my_acf_blocks_init' );
-function my_acf_blocks_init() {
-	if ( function_exists( 'acf_register_block_type' ) ) {
-		acf_register_block_type(
-			array(
-				'name'            => 'if-active',
-				'title'           => 'Om aktiv',
-				'mode'            => 'preview',
-				'supports'        => array(
-					'align'              => true,
-					'mode'               => false,
-					'__experimental_jsx' => true,
-				),
-				'render_template' => 'acf/logic/if-active.php',
-			)
-		);
-		acf_register_block_type(
-			array(
-				'name'            => 'if-loggedout',
-				'title'           => 'Om inaktiv',
-				'mode'            => 'preview',
-				'supports'        => array(
-					'align'              => true,
-					'mode'               => false,
-					'__experimental_jsx' => true,
-				),
-				'render_template' => 'acf/logic/if-inactive.php',
-			)
-		);
 	}
 }

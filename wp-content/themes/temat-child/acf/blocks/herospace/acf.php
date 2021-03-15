@@ -1,15 +1,27 @@
 <?php
 $block
 	->addTab(
-		'content',
+		'contents',
 		array(
 			'label' => 'Innehåll',
 		)
 	)
-	->addImage(
-		'image',
+	->addWysiwyg(
+		'text',
 		array(
-			'label'         => 'Bakgrundsbild',
+			'label' => 'Innehåll',
+		)
+	)
+	->addLink(
+		'button',
+		array(
+			'label' => 'Länk',
+		)
+	)
+	->addImage(
+		'background',
+		array(
+			'label'         => 'Bakgrund',
 			'return_format' => 'id',
 		)
 	)

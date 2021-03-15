@@ -1,42 +1,8 @@
-//Fonts
-$dm-sans: "DM Sans", sans-serif;
-$dm-serif: "DM Serif Text", serif;
-
 
 //Site structure
 // If any of these values are changed, they also have to be updated in
 // t_get_all_image_positions() in temat-child/config/images.php
 $outer-max-width: 1294px;
-$inner-max-width: 612+30*2px;
 $main-padding: 30px;
 $column-padding: 15px;
 
-
-$text: #070f1a;
-$border: #8f9396;
-
-$gray-light: #eaedf0;
-$gray-medium: #dfe3e8;
-$gray-dark: #50565e;
-$gray-darker: #373e46;
-
-$blue: #0141ff;
-$blue-light: #4c79ff;
-$red: #ff6a99;
-$red-light: #ffb3cb;
-$yellow: #ffc600;
-$yellow-light: #ffe27e;
-$green: #6ca885;
-$green-light: #b6d4c2;
-$green-lighter: #e9f2ed;
-$magenta: #9175ec;
-$magenta-light: #efebfd;
-
-$blue-bg: #f4faff;
-$red-bg: #fff5f7;
-$yellow-bg: #fffbed;
-$green-bg: #f4f9f6;
-$magenta-bg: #f9f8fe;
-$gray-bg: #f2f4f6;
-
-$box-shadow: 0 1px 5px rgba(7, 15, 26, 0.1);

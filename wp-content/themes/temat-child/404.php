@@ -3,7 +3,9 @@
 	<main id="main" class="site-main">
 		<section class="error-404 not-found">
 			<div class="container">
-				<?php esc_html_e( '404 kommer snart', 'temat-child' ); ?>
+				<?php if ( get_field( '404_text', 'options' ) ) : ?>
+					<?php echo apply_filters( 'the_content', get_field( '404_text', 'options' ) ); ?>
+				<?php endif; ?>
 			</div>
 		</section>
 	</main>
