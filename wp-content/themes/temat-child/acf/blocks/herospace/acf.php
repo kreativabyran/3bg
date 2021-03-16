@@ -37,4 +37,17 @@ $block
 			'label' => 'ID',
 		)
 	)
+	->addRadio(
+		'background_type',
+		array(
+			'label'         => 'Bakgrundstyp',
+			'choices'       => array(
+				'short',
+				'tall',
+			),
+			'default_value' => array(
+				'tall',
+			),
+		)
+	)
 	->setLocation( 'block', '==', 'acf/' . $name );

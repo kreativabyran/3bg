@@ -1,5 +1,5 @@
 <?php $image = wp_get_attachment_image_src( get_field( 'background' ), 'full' ); ?>
-<div <?php echo $image ? 'style="background-image:url(' . $image[0] . ')"' : ''; ?> class="header" <?php echo get_field( 'block_id' ) ? 'id="' . get_field( 'block_id' ) . '"' : ''; ?>>
+<div <?php echo $image ? 'style="background-image:url(' . $image[0] . ')"' : ''; ?>  class="header<?php echo get_field( 'background_type' ) === 'short' ? ' short' : ''; ?>" <?php echo get_field( 'block_id' ) ? 'id="' . get_field( 'block_id' ) . '"' : ''; ?>>
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">

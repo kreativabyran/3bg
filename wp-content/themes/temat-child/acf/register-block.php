@@ -16,6 +16,10 @@ function my_acf_init_block_types() {
 		'herospace',
 		__( 'Herospace', 'temat-child' )
 	);
+	t_create_block(
+		'pages',
+		__( 'Sidor', 'temat-child' )
+	);
 }
 add_action( 'acf/init', 'my_acf_init_block_types' );
 
