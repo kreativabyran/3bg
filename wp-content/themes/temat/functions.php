@@ -159,7 +159,7 @@ if ( ! function_exists( 'temat_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
-				'primary-menu' => esc_html__( 'Primary', 'temat' ),
+				'primary-menu' => esc_html__( 'Meny', 'temat' ),
 			)
 		);
 
