@@ -12,3 +12,9 @@ registerBlockStyle('core/group', {
   label: __('Container fluid', 'temat-child'),
   isDefault: false,
 });
+
+registerBlockStyle('core/paragraph', {
+  name: 'preamble',
+  label: __('Ingress', 'temat-child'),
+  isDefault: false,
+});

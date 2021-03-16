@@ -15,17 +15,26 @@
 			<?php endif; ?>
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-12">
+					<div class="col-sm-8 col-xs-12">
 						<?php
 						while ( have_posts() ) :
 							the_post();
 							?>
-							<?php get_template_part( 'template-parts/templates/content-blog' ); ?>
+							<?php get_template_part( 'templates/content-blog' ); ?>
 						<?php endwhile; ?>
+					</div>
+					<div class="col-sm-4 col-xs-12">
+						<aside>
+							<?php echo t_get_latest_post(); ?>
+						</aside>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<?php the_posts_navigation(); ?>
 					</div>
 				</div>
 			</div>
-			<?php the_posts_navigation(); ?>
 		<?php endif; ?>
 	</main>
 </div>
