@@ -17,3 +17,7 @@ endif;
 if ( file_exists( TEMAT_CHILD_DIR . 'config/theme-settings.php' ) ) :
 	include TEMAT_CHILD_DIR . 'config/theme-settings.php';
 endif;
+
+if ( file_exists( TEMAT_CHILD_DIR . 'config/blog.php' ) ) :
+	include TEMAT_CHILD_DIR . 'config/blog.php';
+endif;
