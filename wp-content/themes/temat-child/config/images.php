@@ -4,6 +4,7 @@ function temat_custom_image_sizes( $sizes ) {
 		$sizes,
 		array(
 			'articleThumbnail' => __( 'Artikeltumnagel', 'temat-child' ),
+			'blogHeader'       => __( 'Blogheader', 'temat-child' ),
 		)
 	);
 }
@@ -11,6 +12,7 @@ add_action(
 	'after_setup_theme',
 	function () {
 		add_image_size( 'articleThumbnail', 740, 562, true );
+		add_image_size( 'blogHeader', 99999, 435, true );
 	}
 );
 add_filter( 'image_size_names_choose', 'temat_custom_image_sizes' );
