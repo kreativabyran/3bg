@@ -14,6 +14,23 @@
 <div id="page" class="site">
 	<header id="masthead" class="site-header">
 		<div class="container">
+			<?php if ( has_nav_menu( 'top-menu' ) ) : ?>
+				<div class="row">
+					<div class="col-xs-12">
+						<nav>
+							<?php
+								wp_nav_menu(
+									array(
+										'container'      => false,
+										'theme_location' => 'top-menu',
+										'menu_id'        => 'top-menu',
+									)
+								);
+							?>
+						</nav>
+					</div>
+				</div>
+			<?php endif; ?>
 			<div class="row">
 				<div class="col-xs-12">
 					<div class="wrapper">
