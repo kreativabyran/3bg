@@ -2,17 +2,19 @@
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
 		<?php if ( have_posts() ) : ?>
-			<?php if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12">
-								<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-							</div>
+			<?php $text = get_field( 'blog_text', 'options' ); ?>
+			<?php $image = wp_get_attachment_image_src( get_field( 'blog_bg', 'options' ), 'blogHeader' ); ?>
+			<header <?php echo $image[0] ? 'style="background-image:url(' . $image[0] . ')"' : ''; ?>>
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<?php if ( $text ) : ?>
+								<?php echo apply_filters( 'the_content', $text ); ?>
+							<?php endif; ?>
 						</div>
 					</div>
-				</header>
-			<?php endif; ?>
+				</div>
+			</header>
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-8 col-xs-12">

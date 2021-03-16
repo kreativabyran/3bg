@@ -33,6 +33,25 @@ add_action(
 					'label' => 'Text',
 				)
 			)
+			->addTab(
+				'blog',
+				array(
+					'label' => 'Blogg',
+				)
+			)
+			->addWysiwyg(
+				'blog_text',
+				array(
+					'label' => 'Bloggtext',
+				)
+			)
+			->addImage(
+				'blog_bg',
+				array(
+					'label'         => 'Bloggbakgrund',
+					'return_format' => 'id',
+				)
+			)
 			->setLocation( 'options_page', '==', 'theme-options' );
 			acf_add_local_field_group( $options->build() );
 		endif;
