@@ -52,8 +52,28 @@ add_action(
 					'return_format' => 'id',
 				)
 			)
+			->addTab(
+				'header',
+				array(
+					'label' => 'Header',
+				)
+			)
+			->addImage(
+				'automation_image',
+				array(
+					'label'         => 'Automationbild',
+					'return_format' => 'id',
+				)
+			)
+			->addLink(
+				'automation_link',
+				array(
+					'label' => 'Automationlänk',
+				)
+			)
 			->setLocation( 'options_page', '==', 'theme-options' );
 			acf_add_local_field_group( $options->build() );
 		endif;
 	}
 );
+add_post_type_support( 'page', 'excerpt' );
