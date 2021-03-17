@@ -2212,6 +2212,7 @@ html {
 }
 
 body {
+  font-family: "DM Sans", sans-serif;
   margin: 0;
   font-size: 100%;
   overflow-x: hidden;
@@ -2256,7 +2257,7 @@ span {
   content: "";
   position: absolute;
   margin-left: 3px;
-  top: 4px;
+  top: 6px;
   width: 0;
   height: 0;
   border-top: 4px solid transparent;
@@ -2343,6 +2344,11 @@ footer {
   padding: 30px;
 }
 
+footer a {
+  color: red;
+  text-decoration: none;
+}
+
 .contact-form {
   padding: 60px 30px;
 }
@@ -2353,7 +2359,7 @@ footer {
 }
 
 .contact-form p {
-  max-width: 600px;
+  max-width: 700px;
   margin: 10px auto 20px auto;
 }
 
@@ -2395,7 +2401,7 @@ footer {
 }
 
 .wp-block-group.landing-cards {
-  padding: 55px 30px 40px 30px;
+  padding: 55px 15px 40px 15px;
   min-height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2427,7 +2433,12 @@ footer {
   color: black;
 }
 
+.wp-block-group.landing-cards p {
+  margin-bottom: 1rem;
+  max-width: 400px;
+}
+
 .wp-block-group.landing-cards h2 {
-  font-size: 25px;
+  font-size: 23px;
 }
 /*# sourceMappingURL=style.css.map */

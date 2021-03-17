@@ -1,5 +1,5 @@
 .wp-block-group.landing-cards {
-  padding: 55px 30px 40px 30px;
+  padding: 55px 15px 40px 15px;
   min-height: 400px;
   display: flex;
   align-items: center;
@@ -21,9 +21,12 @@
     text-decoration: none;
     color: black;
   }
-
+  p {
+    margin-bottom: 1rem;
+    max-width: 400px;
+  }
   h2 {
-    font-size: 25px;
+    font-size: 23px;
   }
 
   
