@@ -14,7 +14,7 @@
 						<?php endif; ?>
 						<h2><?php echo esc_html( $page['page']->post_title ); ?></h2>
 						<div><?php echo apply_filters( 'the_excerpt', $page['page']->post_excerpt ); ?></div>
-						<div><?php echo esc_html( 'Läs mer', 'temat-child' ); ?></div>
+						<div class="is-style-arrowlink"><?php echo esc_html( 'Läs mer', 'temat-child' ); ?></div>
 					</article>
 				</a>
 			<?php echo $count % 3 === 0 || count( $posts ) === $count ? '</div>' : ''; ?>
