@@ -71,6 +71,123 @@ add_action(
 					'label' => 'Automationlänk',
 				)
 			)
+
+			// Front Automation
+			->addTab(
+				'front_automation',
+				array(
+					'label' => 'Front Automation',
+				)
+			)
+			->addGroup(
+				'footer_front',
+				array(
+					'label' => 'Sidfot',
+				)
+			)
+			->addWysiwyg(
+				'footer_text_left',
+				array(
+					'label' => 'Sidfottext vänster',
+				)
+			)
+			->addImage(
+				'footer_icon_left',
+				array(
+					'label' => 'Sidfotbild vänster',
+				)
+			)
+			->addWysiwyg(
+				'footer_text_right',
+				array(
+					'label' => 'Sidfottext höger',
+				)
+			)
+			->addImage(
+				'footer_icon_right',
+				array(
+					'label' => 'Sidfotbild höger',
+				)
+			)
+			->endGroup()
+
+			// Fröjd Automation
+			->addTab(
+				'frojd_automation',
+				array(
+					'label' => 'Fröjd Automation',
+				)
+			)
+			->addGroup(
+				'footer_frojd',
+				array(
+					'label' => 'Sidfot',
+				)
+			)
+			->addWysiwyg(
+				'footer_text_left',
+				array(
+					'label' => 'Sidfottext vänster',
+				)
+			)
+			->addImage(
+				'footer_icon_left',
+				array(
+					'label' => 'Sidfotbild vänster',
+				)
+			)
+			->addWysiwyg(
+				'footer_text_right',
+				array(
+					'label' => 'Sidfottext höger',
+				)
+			)
+			->addImage(
+				'footer_icon_right',
+				array(
+					'label' => 'Sidfotbild höger',
+				)
+			)
+			->endGroup()
+
+			// Fröjd Automation
+			->addTab(
+				'iml_technology ',
+				array(
+					'label' => 'IML Technology',
+				)
+			)
+			->addGroup(
+				'footer_iml',
+				array(
+					'label' => 'Sidfot',
+				)
+			)
+			->addWysiwyg(
+				'footer_text_left',
+				array(
+					'label' => 'Sidfottext vänster',
+				)
+			)
+			->addImage(
+				'footer_icon_left',
+				array(
+					'label' => 'Sidfotbild vänster',
+				)
+			)
+			->addWysiwyg(
+				'footer_text_right',
+				array(
+					'label' => 'Sidfottext höger',
+				)
+			)
+			->addImage(
+				'footer_icon_right',
+				array(
+					'label' => 'Sidfotbild höger',
+				)
+			)
+			->endGroup()
 			->setLocation( 'options_page', '==', 'theme-options' );
 			acf_add_local_field_group( $options->build() );
 		endif;
