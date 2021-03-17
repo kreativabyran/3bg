@@ -2405,6 +2405,10 @@ footer a {
   margin-top: -7px;
 }
 
+body.blog article, body.blog aside {
+  margin: 3rem 0;
+}
+
 body.blog article a {
   position: relative;
   display: -ms-grid;
@@ -2414,7 +2418,6 @@ body.blog article a {
   -ms-grid-rows: auto;
       grid-template-rows: auto;
   grid-gap: 0 2%;
-  margin: 3rem 0;
 }
 
 @media (max-width: 600px) {

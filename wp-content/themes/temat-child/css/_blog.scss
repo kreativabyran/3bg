@@ -1,4 +1,9 @@
 body.blog {
+
+  article, aside {
+    margin: 3rem 0;
+  }
+
   article a{
     position: relative;
     display: grid;
@@ -12,7 +17,7 @@ body.blog {
       grid-template-columns: 1fr;
     }
 
-    margin: 3rem 0;
+    
   }
 
   figure, .date, .entry-header, .entry-content {
