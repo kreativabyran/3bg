@@ -94,7 +94,7 @@ add_action(
 			->addSelect(
 				'front_topmenu',
 				array(
-					'label' => 'Topmeny',
+					'label' => 'Toppmeny',
 				)
 			)
 			->addSelect(
@@ -158,7 +158,7 @@ add_action(
 			->addSelect(
 				'frojd_topmenu',
 				array(
-					'label' => 'Topmeny',
+					'label' => 'Toppmeny',
 				)
 			)
 			->addSelect(
@@ -222,7 +222,7 @@ add_action(
 			->addSelect(
 				'iml_topmenu',
 				array(
-					'label' => 'Topmeny',
+					'label' => 'Toppmeny',
 				)
 			)
 			->addSelect(
