@@ -80,6 +80,31 @@ add_action(
 				)
 			)
 			->addGroup(
+				'header_front',
+				array(
+					'label' => 'Sidhuvud',
+				)
+			)
+			->addImage(
+				'logo',
+				array(
+					'label' => 'Logga',
+				)
+			)
+			->addSelect(
+				'front_topmenu',
+				array(
+					'label' => 'Topmeny',
+				)
+			)
+			->addSelect(
+				'front_menu',
+				array(
+					'label' => 'Meny',
+				)
+			)
+			->endGroup()
+			->addGroup(
 				'footer_front',
 				array(
 					'label' => 'Sidfot',
@@ -118,6 +143,31 @@ add_action(
 					'label' => 'Fröjd Automation',
 				)
 			)
+			->addGroup(
+				'header_frojd',
+				array(
+					'label' => 'Sidhuvud',
+				)
+			)
+			->addImage(
+				'logo',
+				array(
+					'label' => 'Logga',
+				)
+			)
+			->addSelect(
+				'frojd_topmenu',
+				array(
+					'label' => 'Topmeny',
+				)
+			)
+			->addSelect(
+				'frojd_menu',
+				array(
+					'label' => 'Meny',
+				)
+			)
+			->endGroup()
 			->addGroup(
 				'footer_frojd',
 				array(
@@ -158,6 +208,31 @@ add_action(
 				)
 			)
 			->addGroup(
+				'header_iml',
+				array(
+					'label' => 'Sidhuvud',
+				)
+			)
+			->addImage(
+				'logo',
+				array(
+					'label' => 'Logga',
+				)
+			)
+			->addSelect(
+				'iml_topmenu',
+				array(
+					'label' => 'Topmeny',
+				)
+			)
+			->addSelect(
+				'iml_menu',
+				array(
+					'label' => 'Meny',
+				)
+			)
+			->endGroup()
+			->addGroup(
 				'footer_iml',
 				array(
 					'label' => 'Sidfot',
@@ -194,3 +269,24 @@ add_action(
 	}
 );
 add_post_type_support( 'page', 'excerpt' );
+
+
+
+
+add_filter( 'acf/load_field/name=front_topmenu', 'populate_select_width_menus' );
+add_filter( 'acf/load_field/name=front_menu', 'populate_select_width_menus' );
+add_filter( 'acf/load_field/name=frojd_topmenu', 'populate_select_width_menus' );
+add_filter( 'acf/load_field/name=frojd_menu', 'populate_select_width_menus' );
+add_filter( 'acf/load_field/name=iml_topmenu', 'populate_select_width_menus' );
+add_filter( 'acf/load_field/name=iml_menu', 'populate_select_width_menus' );
+
+function populate_select_width_menus( $field ) {
+	$field['choices'] = array();
+	$menus            = get_terms( 'nav_menu' );
+	if ( is_array( $menus ) ) {
+		foreach ( $menus as $menu ) {
+			$field['choices'][ $menu->term_id ] = $menu->name;
+		}
+	}
+	return $field;
+}
