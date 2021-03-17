@@ -1,0 +1,20 @@
+{
+    "title": "Sidalternativ",
+    "prefix": "page_options_",
+    "domain": "temat-child",
+    "class_name": "Page_Options",
+    "post-type": [
+        "page"
+    ],
+    "context": "normal",
+    "priority": "default",
+    "fields": [
+        {
+            "type": "select",
+            "label": "Sidtyp",
+            "default": "standard",
+            "options": "standard : Standard\r\nfront : Front Automation\r\nfrojd : Fr\u00f6jd Automation\r\niml : IML Technology",
+            "id": "page_options_sidtyp"
+        }
+    ]
+}
