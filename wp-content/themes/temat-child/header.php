@@ -14,6 +14,23 @@
 <div id="page" class="site">
 	<header id="masthead" class="site-header">
 		<div class="container">
+			<?php if ( has_nav_menu( 'top-menu' ) ) : ?>
+				<div class="row">
+					<div class="col-xs-12">
+						<nav>
+							<?php
+								wp_nav_menu(
+									array(
+										'container'      => false,
+										'theme_location' => 'top-menu',
+										'menu_id'        => 'top-menu',
+									)
+								);
+							?>
+						</nav>
+					</div>
+				</div>
+			<?php endif; ?>
 			<div class="row">
 				<div class="col-xs-12">
 					<div class="wrapper">
@@ -28,19 +45,32 @@
 							</button>
 							<div class="temat-primary-menu-container">
 								<?php
-									if ( has_nav_menu( 'primary-menu' ) ) {
-										wp_nav_menu(
-											array(
-												'container' => false,
-												'theme_location' => 'primary-menu',
-												'menu_id' => 'primary-menu',
-											)
-										);
-									}
+								if ( has_nav_menu( 'primary-menu' ) ) {
+									wp_nav_menu(
+										array(
+											'container' => false,
+											'theme_location' => 'primary-menu',
+											'menu_id'   => 'primary-menu',
+										)
+									);
+								}
 								?>
 							</div>
+							<?php $automation_image = get_field( 'automation_image', 'options' ); ?>
+							<?php $automation_link = get_field( 'automation_link', 'options' ); ?>
+							<?php if ( $automation_image && $automation_link ) : ?>
+								<div class="automation">
+									<?php $image = wp_get_attachment_image( $automation_image, 'articleThumbnail' ); ?>
+									<?php if ( $image && $automation_link ) : ?>
+										<a href="<?php echo $automation_link['url']; ?>" target="_self">
+											<figure>
+												<?php echo $image; ?>
+											</figure>
+										</a>
+									<?php endif; ?>
+								</div>
+							<?php endif; ?>
 						</nav>
-
 					</div>
 				</div>
 			</div>
