@@ -52,10 +52,12 @@ add_action(
 					'return_format' => 'id',
 				)
 			)
+
+			// Header
 			->addTab(
 				'header',
 				array(
-					'label' => 'Header',
+					'label' => 'Sidhuvud',
 				)
 			)
 			->addImage(
@@ -71,6 +73,47 @@ add_action(
 					'label' => 'Automationlänk',
 				)
 			)
+
+			// Footer
+			->addTab(
+				'footer',
+				array(
+					'label' => 'Sidfot',
+				)
+			)
+			->addGroup(
+				'footer',
+				array(
+					'label' => 'Sidfot',
+				)
+			)
+			->addWysiwyg(
+				'footer_text_left',
+				array(
+					'label' => 'Sidfottext vänster',
+				)
+			)
+			->addImage(
+				'footer_icon_left',
+				array(
+					'label'         => 'Sidfotbild vänster',
+					'return_format' => 'id',
+				)
+			)
+			->addWysiwyg(
+				'footer_text_right',
+				array(
+					'label' => 'Sidfottext höger',
+				)
+			)
+			->addImage(
+				'footer_icon_right',
+				array(
+					'label'         => 'Sidfotbild höger',
+					'return_format' => 'id',
+				)
+			)
+			->endGroup()
 
 			// Front Automation
 			->addTab(
@@ -119,7 +162,8 @@ add_action(
 			->addImage(
 				'footer_icon_left',
 				array(
-					'label' => 'Sidfotbild vänster',
+					'label'         => 'Sidfotbild vänster',
+					'return_format' => 'id',
 				)
 			)
 			->addWysiwyg(
@@ -131,7 +175,8 @@ add_action(
 			->addImage(
 				'footer_icon_right',
 				array(
-					'label' => 'Sidfotbild höger',
+					'label'         => 'Sidfotbild höger',
+					'return_format' => 'id',
 				)
 			)
 			->endGroup()
@@ -183,7 +228,8 @@ add_action(
 			->addImage(
 				'footer_icon_left',
 				array(
-					'label' => 'Sidfotbild vänster',
+					'label'         => 'Sidfotbild vänster',
+					'return_format' => 'id',
 				)
 			)
 			->addWysiwyg(
@@ -195,7 +241,8 @@ add_action(
 			->addImage(
 				'footer_icon_right',
 				array(
-					'label' => 'Sidfotbild höger',
+					'label'         => 'Sidfotbild höger',
+					'return_format' => 'id',
 				)
 			)
 			->endGroup()
@@ -247,7 +294,8 @@ add_action(
 			->addImage(
 				'footer_icon_left',
 				array(
-					'label' => 'Sidfotbild vänster',
+					'label'         => 'Sidfotbild vänster',
+					'return_format' => 'id',
 				)
 			)
 			->addWysiwyg(
@@ -259,7 +307,8 @@ add_action(
 			->addImage(
 				'footer_icon_right',
 				array(
-					'label' => 'Sidfotbild höger',
+					'label'         => 'Sidfotbild höger',
+					'return_format' => 'id',
 				)
 			)
 			->endGroup()
