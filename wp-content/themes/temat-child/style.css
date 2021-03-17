@@ -2348,7 +2348,7 @@ header.site-header ul#primary-menu li {
 }
 
 footer {
-  padding: 30px;
+  padding: 60px 30px;
 }
 
 footer a {
@@ -2463,6 +2463,7 @@ body.blog .entry-content {
 
 body.blog aside {
   font-size: 1.1rem;
+  max-width: 300px;
 }
 
 body.blog aside ul {
