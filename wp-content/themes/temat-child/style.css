@@ -2238,6 +2238,24 @@ span {
   font-size: 1rem;
 }
 
+p.is-style-arrowlink a {
+  color: #000000;
+  position: relative;
+  text-decoration: none;
+}
+
+p.is-style-arrowlink a::after {
+  content: "";
+  position: absolute;
+  margin-left: 3px;
+  top: 4px;
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 8px solid #f00;
+}
+
 p.is-style-preamble {
   font-size: 1.142rem;
 }
@@ -2352,6 +2370,7 @@ header.site-header ul#primary-menu li {
 .contact-form #frm_field_9_container textarea {
   resize: none !important;
   max-height: 112px;
+  padding-top: 1em;
 }
 
 @media (max-width: 600px) {
@@ -2362,5 +2381,37 @@ header.site-header ul#primary-menu li {
 
 .contact-form .frm_submit {
   margin-top: -7px;
+}
+
+.wp-block-group.landing-cards {
+  padding: 30px;
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wp-block-group.landing-cards .wp-block-columns {
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wp-block-group.landing-cards .wp-block-columns .wp-block-column {
+  max-width: 350px;
+}
+
+.wp-block-group.landing-cards .wp-block-columns .wp-block-column img {
+  min-height: 250px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=style.css.map */

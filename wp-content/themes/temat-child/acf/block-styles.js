@@ -18,3 +18,9 @@ registerBlockStyle('core/paragraph', {
   label: __('Ingress', 'temat-child'),
   isDefault: false,
 });
+
+registerBlockStyle('core/paragraph', {
+  name: 'arrowlink',
+  label: __('Länk med pil', 'temat-child'),
+  isDefault: false,
+});

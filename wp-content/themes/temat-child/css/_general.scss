@@ -64,6 +64,24 @@ span {
 	font-size: 1rem;
 }
 
+p.is-style-arrowlink a {
+	color: #000000;
+	position: relative;
+	text-decoration: none;
+
+	&::after {
+		content: "";
+    position: absolute;
+    margin-left: 3px;
+    top: 4px;
+    width: 0; 
+    height:0; 
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 8px solid #f00;
+	}
+}
+
 p.is-style-preamble {
 	font-size: 1.142rem;
 }
