@@ -1,15 +1,14 @@
 .contact-form {
-  padding: $main-padding;
+  padding: 60px $main-padding;
 
   h2 {
     font-size: 40px;
-    margin-bottom: 10px;
+    margin: 0;
   }
   
   p {
-    margin: auto;
     max-width: 600px;
-    margin-bottom: 20px;
+    margin: 10px auto 20px auto;
   }
 
   .frm_combo_inputs_container > *, .frm_grid_container > *, .frm_section_heading > *, .frm_fields_container .frm_form_field, .frm_fields_container > * {
@@ -40,8 +39,6 @@
   }
 
   .frm_submit { margin-top: -7px; }
-
-
 }
 
 

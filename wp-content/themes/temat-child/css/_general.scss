@@ -30,11 +30,12 @@ h6,
 .h5,
 .h6 {
 	-webkit-font-smoothing: antialiased;
+  text-transform: uppercase;
 }
 
 h1,
 .h1 {
-
+  font-size: 40px;
 }
 
 h2,
@@ -66,7 +67,7 @@ span {
 	font-size: 1rem;
 }
 
-p.is-style-arrowlink a {
+.is-style-arrowlink {
 	color: #000000;
 	position: relative;
 	text-decoration: none;

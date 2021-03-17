@@ -1,0 +1,30 @@
+.wp-block-group.landing-cards {
+  padding: 55px 30px 40px 30px;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .wp-block-columns {
+    margin: auto;
+    justify-content: center;
+    .wp-block-column {
+      img {
+        min-height: 250px;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  
+}
