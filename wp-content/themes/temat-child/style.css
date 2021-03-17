@@ -2208,11 +2208,13 @@ Text Domain: temat-child
 
 html {
   font-size: 14px;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
   font-size: 100%;
+  overflow-x: hidden;
 }
 
 h1,
@@ -2383,6 +2385,62 @@ header.site-header ul#primary-menu li {
   margin-top: -7px;
 }
 
+.header {
+  width: 1294px;
+  min-height: 500px;
+  margin: auto;
+  background-size: contain;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: right -75px center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 1350px) {
+  .header {
+    background-position: right -2.5vw center;
+    width: 100%;
+    max-width: 100%;
+    min-height: 40vw;
+  }
+}
+
+@media (max-width: 780px) {
+  .header {
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    max-width: 100%;
+    min-height: 300px;
+  }
+}
+
+.header::before {
+  content: '';
+  background: black;
+  position: absolute;
+  left: -100vw;
+  width: 200vw;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.header .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .wp-block-group.landing-cards {
   padding: 30px;
   min-height: 400px;
@@ -2402,10 +2460,6 @@ header.site-header ul#primary-menu li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.wp-block-group.landing-cards .wp-block-columns .wp-block-column {
-  max-width: 350px;
 }
 
 .wp-block-group.landing-cards .wp-block-columns .wp-block-column img {
