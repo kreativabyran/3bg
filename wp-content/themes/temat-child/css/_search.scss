@@ -1,0 +1,23 @@
+li.search {
+	position: relative;
+
+	&.open .search-form {
+		display: block;
+	}
+
+	.screen-reader-text {
+		width: 0;
+		height: 0;
+		display: block;
+		position: absolute;
+		overflow: hidden;
+	}
+
+	.search-form {
+		position: absolute;
+		display: none;
+		background: #fff;
+		width: 200px;
+		right: 70px;
+	}
+}

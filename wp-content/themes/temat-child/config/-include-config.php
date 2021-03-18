@@ -25,3 +25,7 @@ endif;
 if ( file_exists( TEMAT_CHILD_DIR . 'config/page-settings.php' ) ) :
 	include TEMAT_CHILD_DIR . 'config/page-settings.php';
 endif;
+
+if ( file_exists( TEMAT_CHILD_DIR . 'config/menu.php' ) ) :
+	include TEMAT_CHILD_DIR . 'config/menu.php';
+endif;

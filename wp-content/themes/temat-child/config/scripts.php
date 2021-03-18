@@ -14,8 +14,8 @@ function t_scripts_child() {
 
 	wp_enqueue_style( 'temat-style-child', TEMAT_CHILD_URI . 'style.css', ( $temat_child_settings['LOAD_STYLE'] ) ? array( 'temat-style' ) : array(), filemtime( TEMAT_CHILD_DIR . 'style.css' ), false );
 
-/* 	wp_enqueue_script( 'temat-script-child', TEMAT_CHILD_URI . 'js/script.js', array( 'jquery' ), filemtime( TEMAT_CHILD_DIR . 'js/script.js' ), false );
-
+	wp_enqueue_script( 'temat-script-child', TEMAT_CHILD_URI . 'js/script.js', array( 'jquery' ), filemtime( TEMAT_CHILD_DIR . 'js/script.js' ), false );
+	/*
 	wp_enqueue_script( 'ajax-loading-content', TEMAT_CHILD_URI . 'js/ajax-loading-content.js', array( 'jquery' ), filemtime( TEMAT_CHILD_DIR . 'js/ajax-loading-content.js' ), true );
 	wp_localize_script(
 		'ajax-loading-content',

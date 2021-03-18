@@ -14,11 +14,8 @@
 <div id="page" class="site">
 	<header id="masthead" class="site-header">
 		<div class="container">
-			<?php
-				global $post;
-				$pagetype = get_post_meta( $post->ID, 'page_options_sidtyp', true );
-			?>
-			<?php echo get_top_menu( $pagetype ); ?>
+			<?php // global $post; $pagetype = get_post_meta( $post->ID, 'page_options_sidtyp', true ); ?>
+			<?php echo get_top_menu(); ?>
 			<div class="row">
 				<div class="col-xs-12">
 					<div class="wrapper">
@@ -32,7 +29,7 @@
 								</span>
 							</button>
 							<div class="temat-primary-menu-container">
-								<?php echo get_service_menu( $pagetype ); ?>
+								<?php echo get_service_menu(); ?>
 							</div>
 							<?php $automation_image = get_field( 'automation_image', 'options' ); ?>
 							<?php $automation_link = get_field( 'automation_link', 'options' ); ?>
@@ -48,6 +45,7 @@
 									<?php endif; ?>
 								</div>
 							<?php endif; ?>
+							<?php get_template_part( 'templates/search-form' ); ?>
 						</nav>
 					</div>
 				</div>

@@ -114,6 +114,7 @@ add_action(
 			)
 			->endGroup()
 
+			/*
 			// Front Automation
 			->addTab(
 				'front_automation',
@@ -311,6 +312,7 @@ add_action(
 				)
 			)
 			->endGroup()
+			*/
 			->setLocation( 'options_page', '==', 'theme-options' );
 			acf_add_local_field_group( $options->build() );
 	}
