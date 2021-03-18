@@ -151,12 +151,10 @@ input {
   padding: $main-padding;
   max-width: $outer-max-width;
   width: 100%;
-  // min-height: 400px;
   margin: auto;
 
-  img {
+  img, video {
     height: min-content;
-    // max-height: 400px;
     height: auto;
     object-fit: cover;
     width: 100%;
