@@ -1,15 +1,44 @@
 .header {
-  width: $outer-max-width;
-  min-height: 550px;
-  margin: auto;
-  background-size: contain;
   position: relative;
+  color: white;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: right -80px center;
+  background-position: right -40px center;
+  width: $outer-max-width;
+  margin: auto;
+  min-height: 280px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  padding: 60px 0;
+
+  h1 {
+    margin: 0;
+    color: white;
+  }
+
+  a, p {
+    color: #c5c5c5;
+  }
+
+  &::before {
+    content: '';
+    background: black;
+    position: absolute;
+    left: -100vw;
+    width: 200vw;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+}
+
+// Startsida
+body.home .header {
+  min-height: 550px;
+  background-position: right -80px center;
   justify-content: flex-end;
-  color: white;
+  padding: 0;
 
   @media(max-width: 1350px) {
     background-position: right -5vw center;
@@ -26,32 +55,14 @@
     max-width: 100%;
     min-height: 300px;
   }
-  
-  &::before {
-    content: '';
-    background: black;
-    position: absolute;
-    left: -100vw;
-    width: 200vw;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-  }
 
   .row {
     margin-bottom: 60px;
     margin-top: 60px;
-    color: #c5c5c5;
 
-    h1 {
-      margin: 0;
-      color: white;
-      
-    }
     a {
       margin-top: 10px;
       display: inline-block;
-      color: #c5c5c5;
       padding: 0.8rem 1.3rem;
       border: 1px solid #c5c5c5;
       text-decoration: none;
