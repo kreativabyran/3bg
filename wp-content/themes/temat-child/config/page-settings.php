@@ -156,24 +156,24 @@ function get_page_footer( $pagetype = 'standard' ) {
 	}
 	?>
 	<div class="col-md-3 col-sm-6 col-xs-12">
-		<?php if ( $content['footer_text_left'] ) : ?>
+		<?php if ( isset( $content['footer_text_left'] ) ) : ?>
 			<?php echo apply_filters( 'the_content', $content['footer_text_left'] ); ?>
 		<?php endif; ?>
 	</div>
 	<div class="col-md-3 col-sm-6 col-xs-12">
-		<?php if ( $content['footer_icon_left'] ) : ?>
+		<?php if ( isset( $content['footer_icon_left'] ) ) : ?>
 			<figure>
 				<?php echo wp_get_attachment_image( $content['footer_icon_left'], 'full' ); ?>
 			</figure>
 		<?php endif; ?>
 	</div>
 	<div class="col-md-3 col-sm-6 col-xs-12">
-		<?php if ( $content['footer_text_right'] ) : ?>
+		<?php if ( isset( $content['footer_text_right'] ) ) : ?>
 			<?php echo apply_filters( 'the_content', $content['footer_text_right'] ); ?>
 		<?php endif; ?>
 	</div>
 	<div class="col-md-3 col-sm-6 col-xs-12">
-		<?php if ( $content['footer_icon_right'] ) : ?>
+		<?php if ( isset( $content['footer_icon_right'] ) ) : ?>
 			<figure>
 				<?php echo wp_get_attachment_image( $content['footer_icon_right'], 'full' ); ?>
 			</figure>
@@ -181,4 +181,68 @@ function get_page_footer( $pagetype = 'standard' ) {
 	</div>
 	<?php
 	return ob_get_clean();
+}
+
+function get_top_menu( $pagetype = 'standard' ) {
+	ob_start();
+	$args = array(
+		'container' => false,
+	);
+
+	switch ( $pagetype ) {
+		case 'front':
+			$header       = get_field( 'header_front', 'options' );
+			$args['menu'] = $header['topmenu'];
+			break;
+		case 'frojd':
+			$header       = get_field( 'header_frojd', 'options' );
+			$args['menu'] = $header['topmenu'];
+			break;
+		case 'iml':
+			$header       = get_field( 'header_iml', 'options' );
+			$args['menu'] = $header['topmenu'];
+			break;
+		default:
+			$args['theme_location'] = 'top-menu';
+			$args['menu_id']        = 'top-menu';
+
+	}
+	?>
+	<div class="row">
+		<div class="col-xs-12">
+			<nav>
+				<?php wp_nav_menu( $args ); ?>
+			</nav>
+		</div>
+	</div>
+	<?php
+	return ob_get_clean();
+}
+
+function get_service_menu( $pagetype = 'standard' ) {
+	ob_start();
+	$args = array(
+		'container' => false,
+		'echo'      => false,
+	);
+
+	switch ( $pagetype ) {
+		case 'front':
+			$header       = get_field( 'header_front', 'options' );
+			$args['menu'] = $header['menu'];
+			break;
+		case 'frojd':
+			$header       = get_field( 'header_frojd', 'options' );
+			$args['menu'] = $header['menu'];
+			break;
+		case 'iml':
+			$header       = get_field( 'header_iml', 'options' );
+			$args['menu'] = $header['menu'];
+			break;
+		default:
+			$args['theme_location'] = 'primary-menu';
+			$args['menu_id']        = 'primary-menu';
+
+	}
+	return wp_nav_menu( $args );
 }
