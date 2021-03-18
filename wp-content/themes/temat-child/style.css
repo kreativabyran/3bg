@@ -2477,7 +2477,32 @@ footer a {
   margin-top: -9.5px;
 }
 
-body.blog article, body.blog aside,
+li.search {
+  position: relative;
+}
+
+li.search.open .search-form {
+  display: block;
+}
+
+li.search .screen-reader-text {
+  width: 0;
+  height: 0;
+  display: block;
+  position: absolute;
+  overflow: hidden;
+}
+
+li.search .search-form {
+  position: absolute;
+  display: none;
+  background: #fff;
+  width: 200px;
+  right: 70px;
+}
+
+body.blog article,
+body.blog aside,
 body.single-post article,
 body.single-post aside {
   margin: 3rem 0;
@@ -2501,7 +2526,8 @@ body.single-post aside ul li {
   border-bottom: 1px solid #e0e0e0;
 }
 
-body.blog article a {
+body.blog article a,
+body.search article a {
   position: relative;
   display: -ms-grid;
   display: grid;
@@ -2511,39 +2537,45 @@ body.blog article a {
 }
 
 @media (max-width: 600px) {
-  body.blog article a {
+  body.blog article a,
+  body.search article a {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
 }
 
-body.blog figure {
+body.blog figure,
+body.search figure {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   grid-row: 1/4;
 }
 
-body.blog figure img {
+body.blog figure img,
+body.search figure img {
   height: 100%;
   min-width: 280px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-body.blog .entry-header {
+body.blog .entry-header,
+body.search .entry-header {
   text-transform: uppercase;
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 1rem;
 }
 
-body.blog .entry-header .date {
+body.blog .entry-header .date,
+body.search .entry-header .date {
   font-weight: 500;
   font-size: 1rem;
   margin-bottom: 1rem;
 }
 
-body.blog .entry-content {
+body.blog .entry-content,
+body.search .entry-content {
   margin-bottom: 10px;
 }
 
