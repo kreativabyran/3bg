@@ -1,0 +1,61 @@
+.header {
+  width: $outer-max-width;
+  min-height: 550px;
+  margin: auto;
+  background-size: contain;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: right -80px center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+
+  @media(max-width: 1350px) {
+    background-position: right -5vw center;
+    width: 100%;
+    max-width: 100%;
+    min-height: 41vw;
+    background-size: cover;
+  }
+
+  @media(max-width: 913px) {
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    max-width: 100%;
+    min-height: 300px;
+  }
+  
+  &::before {
+    content: '';
+    background: black;
+    position: absolute;
+    left: -100vw;
+    width: 200vw;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  .row {
+    margin-bottom: 60px;
+    margin-top: 60px;
+    color: #c5c5c5;
+
+    h1 {
+      margin: 0;
+      color: white;
+      line-height: 1.1;
+    }
+    a {
+      margin-top: 10px;
+      display: inline-block;
+      color: #c5c5c5;
+      padding: 0.8rem 1.3rem;
+      border: 1px solid #c5c5c5;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+}
