@@ -13,6 +13,12 @@ registerBlockStyle('core/group', {
   isDefault: false,
 });
 
+registerBlockStyle('core/group', {
+  name: 'col-image',
+  label: __('Kolumn med text och bild', 'temat-child'),
+  isDefault: false,
+});
+
 registerBlockStyle('core/paragraph', {
   name: 'preamble',
   label: __('Ingress', 'temat-child'),
@@ -24,3 +30,5 @@ registerBlockStyle('core/paragraph', {
   label: __('Länk med pil', 'temat-child'),
   isDefault: false,
 });
+
+
