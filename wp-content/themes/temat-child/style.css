@@ -2332,7 +2332,7 @@ img {
   margin: auto;
 }
 
-.is-style-col-image img {
+.is-style-col-image img, .is-style-col-image video {
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
