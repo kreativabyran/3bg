@@ -2328,7 +2328,12 @@ header.site-header ul {
   text-transform: uppercase;
 }
 
-header.site-header ul#top-menu {
+header.site-header .row:first-of-type {
+  position: relative;
+  z-index: 100;
+}
+
+header.site-header .row:first-of-type ul#top-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2338,12 +2343,12 @@ header.site-header ul#top-menu {
   padding-top: 1.5rem;
 }
 
-header.site-header ul#top-menu li {
+header.site-header .row:first-of-type ul#top-menu li {
   padding: 0 1rem;
 }
 
-header.site-header ul#top-menu li:nth-of-type(1),
-header.site-header ul#top-menu li:nth-of-type(2) {
+header.site-header .row:first-of-type ul#top-menu li:nth-of-type(1),
+header.site-header .row:first-of-type ul#top-menu li:nth-of-type(2) {
   border-right: 1px solid black;
 }
 
@@ -2351,19 +2356,19 @@ header.site-header .row:last-of-type {
   margin-top: -4rem;
 }
 
-header.site-header ul#primary-menu {
+header.site-header .row:last-of-type ul#primary-menu {
   margin: 0;
   padding: 0;
   text-align: left;
 }
 
-header.site-header ul#primary-menu li {
+header.site-header .row:last-of-type ul#primary-menu li {
   display: inline-block;
   background: #f2f2f2;
   padding: 0.6rem 1rem;
 }
 
-header.site-header ul#primary-menu li a {
+header.site-header .row:last-of-type ul#primary-menu li a {
   font-size: 1.2rem;
 }
 
