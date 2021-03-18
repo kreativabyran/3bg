@@ -2374,12 +2374,12 @@ header.site-header #site-navigation {
 header.site-header #site-navigation .automation {
   position: absolute;
   right: 0;
-  bottom: -100px;
+  bottom: -80px;
   z-index: 1000;
 }
 
 header.site-header #site-navigation img {
-  width: 300px;
+  width: 250px;
 }
 
 header.site-header .row:first-of-type {
