@@ -1,80 +1,92 @@
 
 body.blog,
 body.single-post {
-  article, aside {
-    margin: 3rem 0;
-  }
-    aside {
-    font-size: 1.1rem;
-    max-width: 300px;
-    ul {
-      padding: 0;
-      list-style: none;
-      li {
-        padding: 0.8rem 0;
-        border-bottom: 1px solid #e0e0e0;
-      }
-    }
-  }
+
+	article,
+	aside {
+		margin: 3rem 0;
+	}
+
+	aside {
+		font-size: 1.1rem;
+		max-width: 300px;
+
+		ul {
+			padding: 0;
+			list-style: none;
+
+			li {
+				padding: 0.8rem 0;
+				border-bottom: 1px solid #e0e0e0;
+			}
+		}
+	}
 }
 
 // Blog posts
-body.blog {
+body.blog,
+body.search {
 
-  // article, aside {
-  //   margin: 3rem 0;
-  // }
-  article a{
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 0 3%;
-    @media(max-width: 600px) {
-      grid-template-columns: 1fr;
-    }
-  }
+	// article, aside {
+	//   margin: 3rem 0;
+	// }
+	article a {
+		position: relative;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 0 3%;
 
-  figure {
-    grid-row: 1/4;
+		@media (max-width: 600px) {
+			grid-template-columns: 1fr;
+		}
+	}
 
-    img {
-      height: 100%;
-      min-width: 280px;
-      object-fit: cover;
-    }
-  }
+	figure {
+		grid-row: 1/4;
 
-  .entry-header {
-    text-transform: uppercase;
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    .date {
-      font-weight: 500;
-      font-size: 1rem;
-      margin-bottom: 1rem;
-    }
-  }
+		img {
+			height: 100%;
+			min-width: 280px;
+			object-fit: cover;
+		}
+	}
 
-  .entry-content {
-    margin-bottom: 10px;
-  }
+	.entry-header {
+		text-transform: uppercase;
+		font-size: 24px;
+		font-weight: 600;
+		margin-bottom: 1rem;
+
+		.date {
+			font-weight: 500;
+			font-size: 1rem;
+			margin-bottom: 1rem;
+		}
+	}
+
+	.entry-content {
+		margin-bottom: 10px;
+	}
 
 }
 
 // Single Blog
 body.single-post {
-  article {
-    max-width: 700px;
-  }
-  h1 {
-    margin: 0.4em 0 0.83em 0;
-  }
-  h2 {
-    margin: 1.5rem 0 -0.5rem 0;
-  }
-  p.is-style-preamble {
-    margin-bottom: 2rem;
-    // border: 1px solid
-  }
+
+	article {
+		max-width: 700px;
+	}
+
+	h1 {
+		margin: 0.4em 0 0.83em 0;
+	}
+
+	h2 {
+		margin: 1.5rem 0 -0.5rem 0;
+	}
+
+	p.is-style-preamble {
+		margin-bottom: 2rem;
+		// border: 1px solid
+	}
 }
