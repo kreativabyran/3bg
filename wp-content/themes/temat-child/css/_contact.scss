@@ -11,14 +11,16 @@
     margin: 10px auto 20px auto;
   }
 
-  .frm_combo_inputs_container > *, .frm_grid_container > *, .frm_section_heading > *, .frm_fields_container .frm_form_field, .frm_fields_container > * {
-    grid-column: span 6 / span 6;
-  }
-
-  .frm_forms.frm_style_formidable-style.with_frm_style {
+  form.frm-show-form  {
+    max-width: 70%;
+    margin: auto;
     @media (max-width: 1100px) {
       max-width: 100%;
     }
+  }
+
+  .frm_combo_inputs_container > *, .frm_grid_container > *, .frm_section_heading > *, .frm_fields_container .frm_form_field, .frm_fields_container > * {
+    grid-column: span 6 / span 6;
   }
 
   #frm_field_6_container { 
