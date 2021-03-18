@@ -2374,7 +2374,7 @@ header.site-header #site-navigation {
 header.site-header #site-navigation .automation {
   position: absolute;
   right: 0;
-  bottom: -100px;
+  bottom: -80px;
   z-index: 1000;
 }
 
