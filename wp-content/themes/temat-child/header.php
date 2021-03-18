@@ -32,7 +32,6 @@
 								</span>
 							</button>
 							<div class="temat-primary-menu-container">
-								<h1>HELLO</h1>
 								<?php echo get_service_menu( $pagetype ); ?>
 							</div>
 							<?php $automation_image = get_field( 'automation_image', 'options' ); ?>
