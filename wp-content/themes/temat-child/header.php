@@ -14,23 +14,11 @@
 <div id="page" class="site">
 	<header id="masthead" class="site-header">
 		<div class="container">
-			<?php if ( has_nav_menu( 'top-menu' ) ) : ?>
-				<div class="row">
-					<div class="col-xs-12">
-						<nav>
-							<?php
-								wp_nav_menu(
-									array(
-										'container'      => false,
-										'theme_location' => 'top-menu',
-										'menu_id'        => 'top-menu',
-									)
-								);
-							?>
-						</nav>
-					</div>
-				</div>
-			<?php endif; ?>
+			<?php
+				global $post;
+				$pagetype = get_post_meta( $post->ID, 'page_options_sidtyp', true );
+			?>
+			<?php echo get_top_menu( $pagetype ); ?>
 			<div class="row">
 				<div class="col-xs-12">
 					<div class="wrapper">
@@ -44,17 +32,8 @@
 								</span>
 							</button>
 							<div class="temat-primary-menu-container">
-								<?php
-								if ( has_nav_menu( 'primary-menu' ) ) {
-									wp_nav_menu(
-										array(
-											'container' => false,
-											'theme_location' => 'primary-menu',
-											'menu_id'   => 'primary-menu',
-										)
-									);
-								}
-								?>
+								<h1>HELLO</h1>
+								<?php echo get_service_menu( $pagetype ); ?>
 							</div>
 							<?php $automation_image = get_field( 'automation_image', 'options' ); ?>
 							<?php $automation_link = get_field( 'automation_link', 'options' ); ?>

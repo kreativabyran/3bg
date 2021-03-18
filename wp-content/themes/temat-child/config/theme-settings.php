@@ -11,7 +11,6 @@ use StoutLogic\AcfBuilder\FieldsBuilder;
 add_action(
 	'acf/init',
 	function() {
-		if ( current_user_can( 'administrator' ) ) :
 			acf_add_options_page(
 				array(
 					'page_title' => get_bloginfo( 'name' ) . ' temainställningar',
@@ -135,13 +134,13 @@ add_action(
 				)
 			)
 			->addSelect(
-				'front_topmenu',
+				'topmenu',
 				array(
 					'label' => 'Toppmeny',
 				)
 			)
 			->addSelect(
-				'front_menu',
+				'menu',
 				array(
 					'label' => 'Meny',
 				)
@@ -201,13 +200,13 @@ add_action(
 				)
 			)
 			->addSelect(
-				'frojd_topmenu',
+				'topmenu',
 				array(
 					'label' => 'Toppmeny',
 				)
 			)
 			->addSelect(
-				'frojd_menu',
+				'menu',
 				array(
 					'label' => 'Meny',
 				)
@@ -267,13 +266,13 @@ add_action(
 				)
 			)
 			->addSelect(
-				'iml_topmenu',
+				'topmenu',
 				array(
 					'label' => 'Toppmeny',
 				)
 			)
 			->addSelect(
-				'iml_menu',
+				'menu',
 				array(
 					'label' => 'Meny',
 				)
@@ -314,7 +313,6 @@ add_action(
 			->endGroup()
 			->setLocation( 'options_page', '==', 'theme-options' );
 			acf_add_local_field_group( $options->build() );
-		endif;
 	}
 );
 add_post_type_support( 'page', 'excerpt' );
@@ -322,12 +320,8 @@ add_post_type_support( 'page', 'excerpt' );
 
 
 
-add_filter( 'acf/load_field/name=front_topmenu', 'populate_select_width_menus' );
-add_filter( 'acf/load_field/name=front_menu', 'populate_select_width_menus' );
-add_filter( 'acf/load_field/name=frojd_topmenu', 'populate_select_width_menus' );
-add_filter( 'acf/load_field/name=frojd_menu', 'populate_select_width_menus' );
-add_filter( 'acf/load_field/name=iml_topmenu', 'populate_select_width_menus' );
-add_filter( 'acf/load_field/name=iml_menu', 'populate_select_width_menus' );
+add_filter( 'acf/load_field/name=topmenu', 'populate_select_width_menus' );
+add_filter( 'acf/load_field/name=menu', 'populate_select_width_menus' );
 
 function populate_select_width_menus( $field ) {
 	$field['choices'] = array();
