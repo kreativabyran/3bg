@@ -15,9 +15,10 @@ header.site-header {
       position: absolute;
       right: 0;
       bottom: -100px;
+      z-index: 1000;
     }
     img {
-      height: 200px;
+      width: 300px;
     }
   }
 

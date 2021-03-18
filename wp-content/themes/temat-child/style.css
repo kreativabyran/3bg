@@ -2375,10 +2375,11 @@ header.site-header #site-navigation .automation {
   position: absolute;
   right: 0;
   bottom: -100px;
+  z-index: 1000;
 }
 
 header.site-header #site-navigation img {
-  height: 200px;
+  width: 300px;
 }
 
 header.site-header .row:first-of-type {
