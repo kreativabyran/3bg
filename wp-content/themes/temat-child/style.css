@@ -2340,7 +2340,7 @@ img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  min-height: 360px;
+  min-height: 380px;
   max-width: 550px;
 }
 
@@ -2354,8 +2354,16 @@ img {
           align-items: center;
 }
 
+.is-style-col-image h1, .is-style-col-image p {
+  max-width: 500px;
+}
+
+.is-style-col-image h1 {
+  margin: 0 0 1rem 0;
+}
+
 .is-style-col-image p {
-  margin-bottom: 0.7rem;
+  margin-bottom: 1rem;
 }
 
 header.site-header button.hamburger {
