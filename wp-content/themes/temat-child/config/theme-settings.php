@@ -11,7 +11,6 @@ use StoutLogic\AcfBuilder\FieldsBuilder;
 add_action(
 	'acf/init',
 	function() {
-		if ( current_user_can( 'administrator' ) ) :
 			acf_add_options_page(
 				array(
 					'page_title' => get_bloginfo( 'name' ) . ' temainställningar',
@@ -314,7 +313,6 @@ add_action(
 			->endGroup()
 			->setLocation( 'options_page', '==', 'theme-options' );
 			acf_add_local_field_group( $options->build() );
-		endif;
 	}
 );
 add_post_type_support( 'page', 'excerpt' );

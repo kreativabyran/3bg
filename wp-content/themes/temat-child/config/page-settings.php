@@ -223,6 +223,7 @@ function get_service_menu( $pagetype = 'standard' ) {
 	ob_start();
 	$args = array(
 		'container' => false,
+		'echo'      => false,
 	);
 
 	switch ( $pagetype ) {
@@ -243,10 +244,5 @@ function get_service_menu( $pagetype = 'standard' ) {
 			$args['menu_id']        = 'primary-menu';
 
 	}
-	?>
-	<?php
-	wp_nav_menu( $args );
-	?>
-	<?php
-	return ob_get_clean();
+	return wp_nav_menu( $args );
 }
