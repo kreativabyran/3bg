@@ -141,3 +141,28 @@ input {
 		padding-left: calc(#{$main-padding} - 10px);
 	}
 }
+
+.is-style-col-image {
+  padding: $main-padding;
+  max-width: $outer-max-width;
+  width: 100%;
+  margin: auto;
+
+  img {
+    height: min-content;
+    max-height: 350px;
+    object-fit: cover;
+  }
+  figure {
+    margin: 0;
+  }
+  .wp-block-columns {
+    position: relative;
+    align-items: center;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+}

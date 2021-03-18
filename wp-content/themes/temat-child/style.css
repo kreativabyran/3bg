@@ -2321,6 +2321,37 @@ img {
   }
 }
 
+.is-style-col-image {
+  padding: 30px;
+  max-width: 1294px;
+  width: 100%;
+  margin: auto;
+}
+
+.is-style-col-image img {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  max-height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.is-style-col-image figure {
+  margin: 0;
+}
+
+.is-style-col-image .wp-block-columns {
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.is-style-col-image p {
+  margin-bottom: 1rem;
+}
+
 header.site-header button.hamburger {
   display: none;
 }
@@ -2660,6 +2691,9 @@ body.home .header .row a {
 }
 
 @media (max-width: 768px) {
+  .pages {
+    padding: 55px 0 40px 0;
+  }
   .pages .row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
