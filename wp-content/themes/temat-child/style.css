@@ -2367,6 +2367,20 @@ header.site-header ul {
   text-transform: uppercase;
 }
 
+header.site-header #site-navigation {
+  position: relative;
+}
+
+header.site-header #site-navigation .automation {
+  position: absolute;
+  right: 0;
+  bottom: -100px;
+}
+
+header.site-header #site-navigation img {
+  height: 200px;
+}
+
 header.site-header .row:first-of-type {
   position: relative;
   z-index: 100;

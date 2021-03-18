@@ -1,5 +1,6 @@
 header.site-header {
 
+
 	button.hamburger {
 		display: none;
 	}
@@ -8,6 +9,18 @@ header.site-header {
     list-style: none;
     text-transform: uppercase;
   }
+  #site-navigation {
+    position: relative;
+    .automation {
+      position: absolute;
+      right: 0;
+      bottom: -100px;
+    }
+    img {
+      height: 200px;
+    }
+  }
+
 
   .row:first-of-type {
     position: relative;
