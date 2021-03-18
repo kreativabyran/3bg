@@ -2366,6 +2366,10 @@ header.site-header ul {
 header.site-header .row:first-of-type {
   position: relative;
   z-index: 100;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin-left: auto;
 }
 
 header.site-header .row:first-of-type ul#top-menu {

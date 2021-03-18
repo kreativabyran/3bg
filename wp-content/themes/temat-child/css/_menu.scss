@@ -12,11 +12,13 @@ header.site-header {
   .row:first-of-type {
     position: relative;
     z-index: 100;
-
+    max-width: max-content;
+    margin-left: auto;
     ul#top-menu {
       display: flex;
       justify-content: flex-end;
       padding-top: 1.5rem;
+      
 
       li {
         padding: 0 1rem;
