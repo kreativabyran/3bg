@@ -2256,7 +2256,7 @@ a {
 }
 
 .is-style-arrowlink {
-  color: #000000;
+  color: #000;
   position: relative;
   text-decoration: none;
 }
@@ -2287,6 +2287,10 @@ span {
 
 figure {
   margin: 0;
+}
+
+iframe {
+  max-width: 100%;
 }
 
 img {
