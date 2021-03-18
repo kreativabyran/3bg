@@ -2332,9 +2332,12 @@ img {
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
-  max-height: 350px;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
+  min-height: 360px;
+  max-width: 550px;
 }
 
 .is-style-col-image figure {
@@ -2342,14 +2345,13 @@ img {
 }
 
 .is-style-col-image .wp-block-columns {
-  position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .is-style-col-image p {
-  margin-bottom: 1rem;
+  margin-bottom: 0.7rem;
 }
 
 header.site-header button.hamburger {

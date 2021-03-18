@@ -146,23 +146,27 @@ input {
   padding: $main-padding;
   max-width: $outer-max-width;
   width: 100%;
+  // min-height: 400px;
   margin: auto;
 
   img {
     height: min-content;
-    max-height: 350px;
+    // max-height: 400px;
+    height: auto;
     object-fit: cover;
+    width: 100%;
+    min-height: 360px;
+    max-width: 550px;
   }
   figure {
     margin: 0;
   }
   .wp-block-columns {
-    position: relative;
     align-items: center;
   }
 
   p {
-    margin-bottom: 1rem;
+    margin-bottom: 0.7rem;
   }
 
 }
