@@ -2670,13 +2670,24 @@ body.single-post p.is-style-preamble {
   z-index: -1;
 }
 
-body.home .header {
+.header:not(.short) {
   min-height: 550px;
-  background-position: right -80px center;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+body.home .header {
+  background-position: right -80px center;
   padding: 0;
+}
+
+@media only screen and (min-width: 62em) {
+  body.home .header .header-col {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    max-width: 50%;
+  }
 }
 
 @media (max-width: 1350px) {
