@@ -1,6 +1,7 @@
 
 body.blog,
-body.single-post {
+body.single-post,
+body.search-results {
 
 	article,
 	aside {
@@ -25,7 +26,7 @@ body.single-post {
 
 // Blog posts
 body.blog,
-body.search {
+body.search-results {
 
 	// article, aside {
 	//   margin: 3rem 0;
