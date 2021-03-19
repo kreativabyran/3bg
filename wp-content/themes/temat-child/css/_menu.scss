@@ -18,6 +18,9 @@ header.site-header {
     }
     img {
       width: 250px;
+      @media (max-width: 900px) {
+        display: none;
+      }
     }
   }
 

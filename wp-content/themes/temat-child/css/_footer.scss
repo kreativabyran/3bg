@@ -5,4 +5,18 @@ footer{
     color: red;
     text-decoration: none;
   }
+
+  @media (max-width: 768px) {
+    padding: $main-padding;
+    p {
+      max-width: 350px;
+    }
+    .row {
+      div {
+        margin-bottom: 2rem;
+      }
+    }
+  }
 }
+
+
