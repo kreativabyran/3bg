@@ -2,7 +2,7 @@
 <div <?php echo $image ? 'style="background-image:url(' . $image[0] . ')"' : ''; ?>  class="header<?php echo get_field( 'background_type' ) === 'short' ? ' short' : ''; ?>" <?php echo get_field( 'block_id' ) ? 'id="' . get_field( 'block_id' ) . '"' : ''; ?>>
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-9 col-sm-6 col-md-4 header-col">
+			<div class="col-xs-12 col-sm-7 col-md-4 header-col">
 				<?php $text = get_field( 'text' ); ?>
 				<?php if ( $text ) : ?>
 					<?php echo apply_filters( 'the_content', get_field( 'text' ) ); ?>

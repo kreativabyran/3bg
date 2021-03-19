@@ -2,8 +2,9 @@
   position: relative;
   color: white;
   background-size: contain;
+  
   background-repeat: no-repeat;
-  background-position: right -40px center;
+  background-position: right center;
   width: $outer-max-width;
   margin: auto;
   min-height: 280px;
@@ -12,6 +13,11 @@
   justify-content: center;
   padding: 60px 0;
 
+
+  .container {
+    position: relative;
+    z-index: 100;
+  }
   h1 {
     margin: 0;
     color: white;
@@ -30,6 +36,23 @@
     top: 0;
     bottom: 0;
     z-index: -1;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    background-size: cover;
+    justify-content: center !important;
+    padding: 60px $main-padding;
+    background-position: left -10% center;
+    &::after {
+      content: '';
+      background: rgba(0, 0, 0, 0.493);
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
   }
 }
 
@@ -79,6 +102,12 @@ body.home .header {
       border: 1px solid #c5c5c5;
       text-decoration: none;
       text-transform: uppercase;
+      transition: 0.2s ease;
+
+      &:hover {
+        border: 1px solid white;
+        color: white;
+      }
     }
   }
 }

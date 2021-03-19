@@ -38,7 +38,7 @@ h6,
 
 h1,
 .h1 {
-	font-size: 40px;
+	font-size: 42px;
 	line-height: 1.1;
 }
 
@@ -121,7 +121,6 @@ img {
 button,
 label,
 input {
-
 }
 
 .wp-block-group.is-style-container > .wp-block-group__inner-container {
@@ -155,7 +154,8 @@ input {
 
   img, video {
     height: min-content;
-    height: auto;
+    // height: auto;
+    max-height: 380px;
     object-fit: cover;
     width: 100%;
     min-height: 380px;
@@ -166,6 +166,7 @@ input {
   }
   .wp-block-columns {
     align-items: center;
+    padding: $column-padding;
   }
 
   h1, p {
@@ -177,6 +178,37 @@ input {
   p {
     margin-bottom: 1rem;
     
+  }
+
+  @media (min-width: 600px) and (max-width: 800px) {
+    .wp-block-columns {
+      flex-direction: column;
+    }
+    h1, p {
+      max-width: 100%;
+    }
+    img, video {
+      min-width: 100%;
+    }
+    .wp-block-column {
+      flex-basis: unset !important;
+      flex-grow: unset !important;
+      min-width: 100%;
+      margin: 0;
+    }
+  }
+
+  @media(max-width: 800px) {
+    h1 {
+      margin-top: 1rem;
+    }
+  }
+
+  @media (max-width: 500px) {
+    img, video {
+      max-height: 100px ;
+      min-height: 300px;
+    }
   }
 
 }

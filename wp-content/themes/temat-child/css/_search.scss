@@ -16,8 +16,33 @@ li.search {
 	.search-form {
 		position: absolute;
 		display: none;
+		// display: block;
 		background: #fff;
-		width: 200px;
-		right: 70px;
+		width: 230px;
+		// right: 60px;
+		right: 72px;
+    top: 40px;
+
+    .search-field {
+      padding: 0.7rem 1rem;
+      margin-top: -6px;
+      border-radius: 0;
+      outline: none;
+      box-shadow: none;
+      border: 1px solid #d1d1d1;
+    }
+    .search-submit {
+      position: absolute;
+      right: -57px;
+      top: -0.4rem;
+      bottom: 0;
+      padding: 0 2rem 0 2rem;
+      background: rgb(31, 31, 31);
+      color: rgb(233, 233, 233);
+      border: none;
+      cursor: pointer;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
 	}
 }

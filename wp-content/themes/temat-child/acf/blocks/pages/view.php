@@ -4,7 +4,7 @@
 		<?php $count = 0; ?>
 		<?php foreach ( $posts as $page ) : ?>
 			<?php echo $count++ % 3 === 0 ? '<div class="row">' : ''; ?>
-				<a class="col-sm-4 col-xs-12" href="<?php echo get_the_permalink( $page['page']->ID ); ?>" target="_self">
+				<a class="col-xs-12 col-md-4" href="<?php echo get_the_permalink( $page['page']->ID ); ?>" target="_self">
 					<article>
 						<?php $image = wp_get_attachment_image( get_post_thumbnail_id( $page['page']->ID ), 'articleThumbnail' ); ?>
 						<?php if ( $image ) : ?>
