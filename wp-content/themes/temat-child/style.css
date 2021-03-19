@@ -2242,12 +2242,19 @@ h1,
   line-height: 1.1;
 }
 
+@media (max-width: 600px) {
+  h1,
+  .h1 {
+    font-size: 33px;
+  }
+}
+
 p,
 li,
 input,
 a,
 span {
-  font-size: 1rem;
+  font-size: 14px;
 }
 
 a {
@@ -2367,7 +2374,7 @@ img {
   margin-bottom: 1rem;
 }
 
-@media (min-width: 600px) and (max-width: 800px) {
+@media (min-width: 600px) and (max-width: 935px) {
   .is-style-col-image .wp-block-columns {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2391,13 +2398,19 @@ img {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 935px) {
+  .is-style-col-image {
+    padding: 30px 30px 0 30px;
+  }
   .is-style-col-image h1 {
     margin-top: 1rem;
   }
 }
 
 @media (max-width: 500px) {
+  .is-style-col-image {
+    padding: 30px 15px 0 15px;
+  }
   .is-style-col-image img, .is-style-col-image video {
     max-height: 100px;
     min-height: 300px;
@@ -2426,6 +2439,12 @@ header.site-header #site-navigation .automation {
 
 header.site-header #site-navigation img {
   width: 250px;
+}
+
+@media (max-width: 900px) {
+  header.site-header #site-navigation img {
+    display: none;
+  }
 }
 
 header.site-header .row:first-of-type {
@@ -2493,8 +2512,20 @@ footer a {
   text-decoration: none;
 }
 
+@media (max-width: 768px) {
+  footer {
+    padding: 30px;
+  }
+  footer p {
+    max-width: 350px;
+  }
+  footer .row div {
+    margin-bottom: 2rem;
+  }
+}
+
 .contact-form {
-  padding: 60px 30px;
+  padding: 60px 15px;
 }
 
 .contact-form h2 {
@@ -2570,7 +2601,7 @@ li.search .search-form {
   background: #fff;
   width: 230px;
   right: 72px;
-  top: 40px;
+  top: 36px;
 }
 
 li.search .search-form .search-field {
@@ -2625,6 +2656,99 @@ body.single-post aside ul li,
 body.search-results aside ul li {
   padding: 0.8rem 0;
   border-bottom: 1px solid #e0e0e0;
+}
+
+body.blog main header,
+body.single-post main header,
+body.search-results main header {
+  position: relative;
+  color: white;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+  width: 1294px;
+  margin: auto;
+  min-height: 280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 60px 0;
+}
+
+body.blog main header::before,
+body.single-post main header::before,
+body.search-results main header::before {
+  content: '';
+  background: black;
+  position: absolute;
+  left: -100vw;
+  width: 200vw;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+body.blog main header .container,
+body.single-post main header .container,
+body.search-results main header .container {
+  position: relative;
+  z-index: 100;
+}
+
+body.blog main header .container h1,
+body.single-post main header .container h1,
+body.search-results main header .container h1 {
+  margin: 0;
+  color: white;
+}
+
+body.blog main header .container a, body.blog main header .container p,
+body.single-post main header .container a,
+body.single-post main header .container p,
+body.search-results main header .container a,
+body.search-results main header .container p {
+  color: #d8d8d8;
+  max-width: 400px;
+}
+
+@media (max-width: 768px) {
+  body.blog main header,
+  body.single-post main header,
+  body.search-results main header {
+    max-width: 100%;
+    background-size: cover;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    background-position: left center;
+  }
+  body.blog main header::after,
+  body.single-post main header::after,
+  body.search-results main header::after {
+    content: '';
+    background-image: -webkit-gradient(linear, left top, right top, from(black), to(rgba(0, 0, 0, 0)));
+    background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0));
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 540px) {
+  body.blog main header,
+  body.single-post main header,
+  body.search-results main header {
+    background-position: left 40% center;
+  }
 }
 
 body.blog article a,
@@ -2715,7 +2839,7 @@ body.single-post p.is-style-preamble {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 60px 0;
+  padding: 60px 15px;
 }
 
 .header .container {
@@ -2743,19 +2867,33 @@ body.single-post p.is-style-preamble {
   z-index: -1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .header {
     max-width: 100%;
     background-size: cover;
-    -webkit-box-pack: center !important;
-        -ms-flex-pack: center !important;
-            justify-content: center !important;
-    padding: 60px 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 60px 25px;
     background-position: left -10% center;
   }
   .header::after {
     content: '';
-    background: rgba(0, 0, 0, 0.493);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.76)), to(rgba(0, 0, 0, 0)));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0));
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .header::after {
+    content: '';
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.76)), to(rgba(0, 0, 0, 0.356)));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.356));
     position: absolute;
     left: 0;
     right: 0;
@@ -2772,8 +2910,8 @@ body.single-post p.is-style-preamble {
 }
 
 body.home .header {
-  background-position: right -80px center;
   padding: 0;
+  background-position: right -80px center;
 }
 
 @media only screen and (min-width: 62em) {
@@ -2784,23 +2922,15 @@ body.home .header {
   }
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 992px) {
   body.home .header {
-    background-position: right -5vw center;
-    width: 100%;
-    max-width: 100%;
-    min-height: 41vw;
-    background-size: cover;
+    background-position: right 60% center;
   }
 }
 
-@media (max-width: 913px) {
+@media (max-width: 600px) {
   body.home .header {
-    background-position: center center;
-    background-size: cover;
-    width: 100%;
-    max-width: 100%;
-    min-height: 300px;
+    background-position: right 53% center;
   }
 }
 
