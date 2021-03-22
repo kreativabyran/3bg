@@ -30,6 +30,15 @@
 							</button>
 							<div class="temat-primary-menu-container">
 								<?php echo get_service_menu(); ?>
+								<?php
+									wp_nav_menu(
+										array(
+											'container' => false,
+											'theme_location' => 'top-menu',
+											'menu_id'   => 'top-menu',
+										)
+									);
+									?>
 							</div>
 							<?php $automation_image = get_field( 'automation_image', 'options' ); ?>
 							<?php $automation_link = get_field( 'automation_link', 'options' ); ?>
