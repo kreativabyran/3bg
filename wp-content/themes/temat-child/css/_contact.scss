@@ -40,6 +40,13 @@
   }
 
   .frm_submit { margin-top: -9.5px; }
+
+  .with_frm_style .frm_message, .frm_error_style {
+    text-align: center;
+    p {
+      margin: 10px auto;
+    }
+  }
 }
 
 .contact-us {
@@ -61,6 +68,15 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+    }
+    a {
+      color: red;
+    }
+    h3 {
+      margin-bottom: 0;
+    }
+    p {
+      margin-top: 0;
     }
   }
 
