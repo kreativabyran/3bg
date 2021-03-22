@@ -2614,8 +2614,16 @@ footer a {
           justify-content: space-between;
 }
 
-.contact-us .wp-block-columns img {
-  max-height: 350px;
+.contact-us .wp-block-columns figure, .contact-us .wp-block-columns img {
+  min-width: 100%;
+}
+
+@media (min-width: 1160px) {
+  .contact-us .wp-block-columns img {
+    min-height: 430px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
 .contact-us .wp-block-columns .wp-block-column {
