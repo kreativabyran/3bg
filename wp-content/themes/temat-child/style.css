@@ -2439,10 +2439,7 @@ header.site-header #site-navigation img {
 
 @media (max-width: 900px) {
   header.site-header #site-navigation img {
-    right: unset;
-    left: 15px;
-    top: 500px;
-    width: 180px;
+    display: none;
   }
 }
 
