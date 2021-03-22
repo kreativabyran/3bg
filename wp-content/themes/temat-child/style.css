@@ -2445,8 +2445,8 @@ header.site-header #site-navigation img {
 
 header.site-header #site-navigation.toggled .automation {
   position: absolute;
-  right: 0;
-  bottom: -80px;
+  right: 160px;
+  bottom: -315px;
   z-index: 1000;
 }
 
@@ -2457,9 +2457,6 @@ header.site-header #site-navigation.toggled img {
 @media (max-width: 900px) {
   header.site-header #site-navigation.toggled img {
     display: block;
-    right: unset;
-    left: 15px;
-    top: 500px;
     width: 180px;
   }
 }
@@ -2597,6 +2594,16 @@ header.site-header #top-menu-mobile ul li {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  header.site-header #top-menu-mobile ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 3rem 0 0 0;
   }
 }
 
@@ -2800,16 +2807,6 @@ button.search-toggle:hover {
   opacity: 0.8;
 }
 
-#top-menu-mobile #top-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 #top-menu-mobile button.search-toggle {
   margin-left: -8px;
   display: none;
@@ -2818,8 +2815,9 @@ button.search-toggle:hover {
 #top-menu-mobile .search-form {
   position: absolute;
   display: block;
-  right: 55px;
-  top: -130px;
+  left: 0;
+  right: unset;
+  top: -185px;
 }
 
 @media (max-width: 600px) {
