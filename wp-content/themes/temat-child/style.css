@@ -2431,6 +2431,16 @@ header.site-header #site-navigation .automation {
   right: 0;
   bottom: -80px;
   z-index: 1000;
+  -webkit-transition: left 0.3s cubic-bezier(0.79, 0.14, 0.15, 0.86);
+  transition: left 0.3s cubic-bezier(0.79, 0.14, 0.15, 0.86);
+}
+
+@media (max-width: 992px) {
+  header.site-header #site-navigation .automation {
+    right: unset;
+    left: -610px;
+    bottom: -505px;
+  }
 }
 
 header.site-header #site-navigation img {
@@ -2444,15 +2454,12 @@ header.site-header #site-navigation img {
 }
 
 header.site-header #site-navigation.toggled .automation {
-  position: absolute;
-  right: unset;
-  left: 15px;
+  left: 13px;
   bottom: -505px;
-  z-index: 1000;
 }
 
 header.site-header #site-navigation.toggled img {
-  width: 180px;
+  width: 220px;
 }
 
 @media (max-width: 900px) {
