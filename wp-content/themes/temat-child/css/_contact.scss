@@ -46,9 +46,17 @@
   .wp-block-columns {
     display: flex;
     justify-content: space-between;
-    img {
-      max-height: 350px;
+    
+    figure, img {
+      min-width: 100%;
     }
+    img {
+      @media (min-width: 1160px) {
+        min-height: 430px;
+        object-fit: cover;
+      }
+    }
+    
     .wp-block-column {
       display: flex;
       flex-direction: column;
