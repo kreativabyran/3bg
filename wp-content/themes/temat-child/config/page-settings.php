@@ -136,7 +136,7 @@ class Page_Options {
 	}
 
 }
-new Page_Options();
+// new Page_Options();
 
 function get_page_footer( $pagetype = 'standard' ) {
 	ob_start();
