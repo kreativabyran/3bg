@@ -2445,8 +2445,9 @@ header.site-header #site-navigation img {
 
 header.site-header #site-navigation.toggled .automation {
   position: absolute;
-  right: 160px;
-  bottom: -315px;
+  right: unset;
+  left: 15px;
+  bottom: -505px;
   z-index: 1000;
 }
 
@@ -2603,7 +2604,7 @@ header.site-header #top-menu-mobile ul li {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 3rem 0 0 0;
+    padding: 3rem 0 0 15px;
   }
 }
 
@@ -2815,16 +2816,13 @@ button.search-toggle:hover {
 #top-menu-mobile .search-form {
   position: absolute;
   display: block;
-  left: 0;
+  left: -15px;
   right: unset;
   top: -185px;
 }
 
 @media (max-width: 600px) {
   #top-menu-mobile .search-form {
-    top: 0;
-    left: 0;
-    right: unset;
     width: 150px;
   }
   #top-menu-mobile .search-form .search-submit {
