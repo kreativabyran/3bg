@@ -12,25 +12,30 @@ header.site-header {
       right: 0;
       bottom: -80px;
       z-index: 1000;
+      -webkit-transition: left .3s cubic-bezier(.79,.14,.15,.86);
+      transition: left .3s cubic-bezier(.79,.14,.15,.86);
+      @media(max-width: 992px) {
+        right: unset;
+        left: -610px;
+        bottom: -505px;
+      }
     }
+
     img {
       width: 250px;
       @media (max-width: 992px) {
+        
         display: none;
       }
     }
   }
   #site-navigation.toggled {
     .automation {
-      position: absolute;
-      // right: 270px;
-      right: unset;
-      left: 15px;
+      left: 13px;
       bottom: -505px;
-      z-index: 1000;
     }
     img {
-      width: 180px;
+      width: 220px;
       @media (max-width: 900px) {
         display: block;
         width: 180px;
