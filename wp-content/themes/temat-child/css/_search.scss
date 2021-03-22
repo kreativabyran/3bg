@@ -16,10 +16,8 @@ li.search {
 	.search-form {
 		position: absolute;
 		display: none;
-		// display: block;
 		background: #fff;
 		width: 230px;
-		// right: 60px;
 		right: 72px;
     top: 36px;
 
@@ -45,4 +43,17 @@ li.search {
       text-transform: uppercase;
     }
 	}
+}
+
+button.search-toggle {
+  border: none;
+  outline: none;
+  background: transparent url(img/search-solid.svg) no-repeat center center;
+  color: transparent;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.2s ease;
+  &:hover {
+    opacity: 0.8;
+  }
 }

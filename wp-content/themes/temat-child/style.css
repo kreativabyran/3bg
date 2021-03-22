@@ -2688,6 +2688,21 @@ li.search .search-form .search-submit {
   text-transform: uppercase;
 }
 
+button.search-toggle {
+  border: none;
+  outline: none;
+  background: transparent url(img/search-solid.svg) no-repeat center center;
+  color: transparent;
+  cursor: pointer;
+  opacity: 0.5;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+button.search-toggle:hover {
+  opacity: 0.8;
+}
+
 body.blog article,
 body.blog aside,
 body.single-post article,
