@@ -23,8 +23,10 @@ header.site-header {
   #site-navigation.toggled {
     .automation {
       position: absolute;
-      right: 160px;
-      bottom: -315px;
+      // right: 270px;
+      right: unset;
+      left: 15px;
+      bottom: -505px;
       z-index: 1000;
     }
     img {
@@ -157,7 +159,8 @@ header.site-header {
       ul {
         display: flex;
         flex-direction: column;
-        padding: 3rem 0 0 0;
+        padding: 3rem 0 0 15px;
+        // padding: 0;
       }
     }
 	}

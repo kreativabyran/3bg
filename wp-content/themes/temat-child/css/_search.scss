@@ -69,13 +69,14 @@ button.search-toggle {
   .search-form {
 		position: absolute;
     display: block;
-		left: 0;
+		left: -15px;
     right: unset;
     top: -185px;
+    // top: 0;
     @media(max-width: 600px) {
-      top: 0;
-      left: 0;
-      right: unset;
+      // top: 0;
+      // left: 0;
+      // right: unset;
       width: 150px;
 
       .search-submit {
