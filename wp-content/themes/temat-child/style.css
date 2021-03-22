@@ -2611,7 +2611,7 @@ header.site-header #top-menu-mobile ul li {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 3rem 0 0 15px;
+    padding: 3rem 0 0 0;
   }
 }
 
@@ -2823,7 +2823,7 @@ button.search-toggle:hover {
 #top-menu-mobile .search-form {
   position: absolute;
   display: block;
-  left: -15px;
+  left: 0;
   right: unset;
   top: -185px;
 }
