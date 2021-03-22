@@ -42,5 +42,21 @@
   .frm_submit { margin-top: -9.5px; }
 }
 
+.contact-us {
+  .wp-block-columns {
+    display: flex;
+    justify-content: space-between;
+    img {
+      max-height: 350px;
+    }
+    .wp-block-column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+}
+
 
 

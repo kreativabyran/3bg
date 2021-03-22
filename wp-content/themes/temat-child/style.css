@@ -2503,6 +2503,32 @@ header.site-header .row:last-of-type ul#primary-menu li a {
   }
 }
 
+body.error404 .not-found {
+  background: #0a0a0a;
+  min-height: 300px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body.error404 h1 {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+}
+
+body.error404 p {
+  font-size: 16px;
+  color: lightgray;
+}
+
 footer {
   padding: 60px 30px;
 }
@@ -2577,6 +2603,32 @@ footer a {
 
 .contact-form .frm_submit {
   margin-top: -9.5px;
+}
+
+.contact-us .wp-block-columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-us .wp-block-columns img {
+  max-height: 350px;
+}
+
+.contact-us .wp-block-columns .wp-block-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 li.search {
