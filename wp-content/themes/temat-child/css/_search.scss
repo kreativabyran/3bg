@@ -72,11 +72,7 @@ button.search-toggle {
 		left: 0;
     right: unset;
     top: -185px;
-    // top: 0;
     @media(max-width: 600px) {
-      // top: 0;
-      // left: 0;
-      // right: unset;
       width: 150px;
 
       .search-submit {
