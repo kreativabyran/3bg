@@ -1,4 +1,5 @@
 header.site-header {
+  font-weight: 500;
 
   ul {
     list-style: none;
@@ -28,6 +29,7 @@ header.site-header {
       }
     }
   }
+
   #site-navigation.toggled {
     .automation {
       left: 0;
@@ -52,12 +54,15 @@ header.site-header {
       justify-content: flex-end;
       padding-top: 1.5rem;
       
+      .current-menu-item {
+        text-decoration: underline;
+      }
 
       li {
         padding: 0 1rem;
       }
-      li:nth-of-type(1),
-      li:nth-of-type(2) {
+
+      li:not(:nth-last-of-type(-n+2)) {
         border-right: 1px solid black;
       }
     }
@@ -83,6 +88,10 @@ header.site-header {
           font-size: 1.2rem;
         }
       }
+
+      .current-menu-item {
+        background-color: #DEDEDE !important;
+      }
     }
   }
 
@@ -90,6 +99,7 @@ header.site-header {
   button.hamburger {
 		display: none;
 	}
+
 
   #top-menu-mobile {
     display: none;
@@ -100,7 +110,6 @@ header.site-header {
       }
     }
   }
-
 	
   @media (max-width: 991.98px) {
     padding: 3rem 0 0.5rem 0;
