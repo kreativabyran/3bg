@@ -2762,7 +2762,7 @@ footer p {
   padding: 2rem 0;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1001px) {
   .contact-us .wp-block-columns.is-style-center {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
