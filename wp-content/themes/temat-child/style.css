@@ -2654,14 +2654,14 @@ footer p {
   margin-top: -3px;
 }
 
-@media (min-width: 770px) and (max-width: 992px) {
+@media (min-width: 770px) and (max-width: 991px) {
   footer .row div:nth-of-type(3), footer .row div:nth-of-type(4) {
     margin-top: 2rem;
   }
 }
 
-@media (min-width: 992px) {
-  footer .row div:nth-of-type(3) {
+@media (min-width: 1100px) {
+  footer .row div:nth-of-type(2) {
     margin-left: -5rem;
   }
   footer .row div:last-of-type {
@@ -2754,12 +2754,6 @@ footer p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-@media (max-width: 1300px) {
-  .contact-us .wp-block-columns {
-    margin-left: 12%;
-  }
 }
 
 @media (max-width: 782px) {
