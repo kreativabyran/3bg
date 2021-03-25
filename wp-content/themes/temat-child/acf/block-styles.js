@@ -19,6 +19,12 @@ registerBlockStyle('core/group', {
   isDefault: false,
 });
 
+registerBlockStyle('core/columns', {
+  name: 'center',
+  label: __('Centrerad', 'temat-child'),
+  isDefault: false,
+});
+
 registerBlockStyle('core/paragraph', {
   name: 'preamble',
   label: __('Ingress', 'temat-child'),
