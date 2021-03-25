@@ -2756,12 +2756,6 @@ footer p {
       flex-wrap: wrap;
 }
 
-@media (max-width: 1300px) {
-  .contact-us .wp-block-columns {
-    margin-left: 12%;
-  }
-}
-
 @media (max-width: 782px) {
   .contact-us .wp-block-columns {
     margin-left: 6%;
