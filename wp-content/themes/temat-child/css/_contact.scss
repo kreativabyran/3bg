@@ -51,50 +51,27 @@
 
 .contact-us {
   padding: 2rem 0;
-  // display: flex;
-  // justify-content: center;
-  .wp-block-group__inner-container {
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // justify-content: center;
-  }
-  .wp-block-group__inner-container {
-    // max-width: unset !important;
-    // width: unset !important;
-    // margin: auto;
-    // padding-right: 30px;
-    // padding-left: 30px;
-    // padding: 0 !important;
-}
+
   .wp-block-columns {
-    // max-width: 1234px;
     display: flex;
     flex-wrap: wrap;
-    // margin: auto;
-    // justify-content: center;
 
-
-      @media(min-width: 768px) {
-        // justify-content: center;
-      }
-      @media(max-width: 1300px) {
-        margin-left: 12%;
-      }
-      @media(max-width: 782px) {
-        margin-left: 6%;
-      }
-      @media(max-width: 710px) {
-        margin-left: 0;
-        justify-content: center;
-      }
+    @media(max-width: 1300px) {
+      margin-left: 12%;
+    }
+    @media(max-width: 782px) {
+      margin-left: 6%;
+    }
+    @media(max-width: 710px) {
+      margin-left: 0;
+      justify-content: center;
+    }
     
     figure, img {
       min-width: 100%;
     }
     img {
       @media (min-width: 1160px) {
-        // min-height: 430px;
         object-fit: cover;
       }
     }
@@ -104,11 +81,7 @@
       flex-direction: column;
       align-items: center;
       margin: 1em;
-      // margin: 0;
       max-width: 280px;
-      @media(max-width: 680px) {
-        // max-width: 40%;
-      }
     }
     a {
       color: red;
