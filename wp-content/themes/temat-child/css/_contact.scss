@@ -50,16 +50,29 @@
 }
 
 .contact-us {
+  padding: 2rem 0;
+
   .wp-block-columns {
     display: flex;
-    justify-content: space-between;
-    
+    flex-wrap: wrap;
+
+    @media(max-width: 1300px) {
+      margin-left: 12%;
+    }
+    @media(max-width: 782px) {
+      margin-left: 6%;
+    }
+    @media(max-width: 711px) {
+      margin-left: 0;
+    }
+    @media(max-width: 672px) {
+      justify-content: center;
+    }
     figure, img {
       min-width: 100%;
     }
     img {
       @media (min-width: 1160px) {
-        min-height: 430px;
         object-fit: cover;
       }
     }
@@ -68,6 +81,8 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin: 1em;
+      max-width: 280px;
     }
     a {
       color: red;
