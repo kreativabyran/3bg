@@ -62,11 +62,12 @@
     @media(max-width: 782px) {
       margin-left: 6%;
     }
-    @media(max-width: 710px) {
+    @media(max-width: 711px) {
       margin-left: 0;
+    }
+    @media(max-width: 672px) {
       justify-content: center;
     }
-    
     figure, img {
       min-width: 100%;
     }

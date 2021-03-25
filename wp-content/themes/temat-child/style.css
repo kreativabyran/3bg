@@ -2768,9 +2768,14 @@ footer p {
   }
 }
 
-@media (max-width: 710px) {
+@media (max-width: 711px) {
   .contact-us .wp-block-columns {
     margin-left: 0;
+  }
+}
+
+@media (max-width: 672px) {
+  .contact-us .wp-block-columns {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
