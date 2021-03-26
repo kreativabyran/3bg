@@ -34,13 +34,13 @@ header.site-header {
   #site-navigation.toggled {
     .automation {
       left: 0;
-      bottom: -495px;
+      bottom: -540px;
     }
     img {
       width: 220px;
       @media (max-width: 900px) {
         display: block;
-        width: 190px;
+        width: 180px;
       }
     }
   }
