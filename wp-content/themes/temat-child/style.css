@@ -2220,6 +2220,12 @@ body {
   line-height: 1.4;
 }
 
+@media (max-width: 991.98px) {
+  body > div {
+    margin-top: 120px;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -2553,6 +2559,13 @@ header.site-header #top-menu-mobile ul li {
 @media (max-width: 991.98px) {
   header.site-header {
     padding: 3rem 0 0.5rem 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 120px;
+    background-color: white;
+    z-index: 10000;
   }
   header.site-header button.hamburger {
     display: block;
@@ -2586,7 +2599,7 @@ header.site-header #top-menu-mobile ul li {
     -webkit-transition: left 0.3s cubic-bezier(0.79, 0.14, 0.15, 0.86);
     transition: left 0.3s cubic-bezier(0.79, 0.14, 0.15, 0.86);
     overflow: auto;
-    padding: 165px 15px 0 15px;
+    padding: 169px 15px 0 15px;
   }
   header.site-header nav.toggled .temat-primary-menu-container {
     left: 0;
@@ -2762,7 +2775,7 @@ footer p {
   padding: 2rem 0;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1001px) {
   .contact-us .wp-block-columns.is-style-center {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -2898,12 +2911,12 @@ button.search-toggle:hover {
   display: block;
   left: 0;
   right: unset;
-  top: -185px;
+  top: -180px;
 }
 
 @media (max-width: 600px) {
   #top-menu-mobile .search-form {
-    width: 150px;
+    width: 179px;
   }
   #top-menu-mobile .search-form .search-submit {
     padding: 0 1rem 0 1rem;

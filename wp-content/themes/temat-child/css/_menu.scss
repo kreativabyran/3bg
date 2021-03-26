@@ -30,6 +30,7 @@ header.site-header {
     }
   }
 
+  
   #site-navigation.toggled {
     .automation {
       left: 0;
@@ -113,6 +114,13 @@ header.site-header {
 	
   @media (max-width: 991.98px) {
     padding: 3rem 0 0.5rem 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 120px;
+    background-color: white;
+    z-index: 10000;
 
 		button.hamburger {
 			display: block;
@@ -147,7 +155,7 @@ header.site-header {
       -webkit-transition: left .3s cubic-bezier(.79,.14,.15,.86);
       transition: left .3s cubic-bezier(.79,.14,.15,.86);
       overflow: auto;
-      padding: 165px 15px 0 15px;
+      padding: 169px 15px 0 15px;
     }
 
     nav.toggled .temat-primary-menu-container  {
