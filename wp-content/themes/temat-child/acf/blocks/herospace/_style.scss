@@ -1,113 +1,143 @@
 .header {
-  position: relative;
-  color: white;
-  background-size: contain;  
-  background-repeat: no-repeat;
-  background-position: right center;
-  width: $outer-max-width;
-  margin: auto;
-  min-height: 280px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 60px 15px;
+	position: relative;
+	color: white;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right center;
+	width: $outer-max-width;
+	margin: auto;
+	min-height: 280px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 60px 15px;
 
 
-  .container {
-    position: relative;
-    z-index: 100;
-  }
-  h1 {
-    margin: 0;
-    color: white;
-  }
+	.container {
+		position: relative;
+		z-index: 100;
+	}
 
-  a, p {
-    color: #c5c5c5;
-  }
+	h1 {
+		margin: 0;
+		color: white;
+	}
 
-  &::before {
-    content: '';
-    background: black;
-    position: absolute;
-    left: -100vw;
-    width: 200vw;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-  }
+	a,
+	p {
+		color: #c5c5c5;
+	}
 
-  @media (max-width: 992px) {
-    max-width: 100%;
-    background-size: cover;
-    justify-content: center;
-    padding: 60px 25px;
-    background-position: left -10% center;
-    &::after {
-      content: '';
-      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0));
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-    }
-  }
+	&::before {
+		content: "";
+		background: black;
+		position: absolute;
+		left: -100vw;
+		width: 200vw;
+		top: 0;
+		bottom: 0;
+		z-index: -1;
+	}
 
-  @media(max-width: 600px) {
-    &::after {
-      content: '';
-      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.356));
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-    }
-  }
+	@media (max-width: 992px) {
+		max-width: 100%;
+		background-size: cover;
+		justify-content: center;
+		padding: 60px 25px;
+		background-position: left -10% center;
+
+		&::after {
+			content: "";
+			background-image: linear-gradient(to right, rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0));
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+		}
+	}
+
+	@media (max-width: 600px) {
+
+		&::after {
+			content: "";
+			background-image: linear-gradient(to right, rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.356));
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+		}
+	}
 }
 
 // Stor header
 .header:not(.short) {
-  min-height: 550px;
-  justify-content: flex-end;
+	min-height: 550px;
+	justify-content: flex-end;
 }
 
 // Home
 body.home .header {
-  padding: 0;
-  background-position: right -80px center;
-  .header-col {
-    @media only screen and (min-width: 62em) {
-      flex-basis: 50%;
-      max-width: 50%;
-    }
-  }
+	padding: 0;
+	background-position: right -80px center;
 
-  @media(max-width: 992px) {
-    background-position: right 60% center;
-  }
-  @media(max-width: 600px) {
-    background-position: right 53% center;
-  }
+	.header-col {
 
-  .row {
-    margin-bottom: 60px;
-    margin-top: 60px;
+		@media only screen and (min-width: 62em) {
+			flex-basis: 50%;
+			max-width: 50%;
+		}
+	}
 
-    a {
-      margin-top: 10px;
-      display: inline-block;
-      padding: 0.8rem 1.3rem;
-      border: 1px solid #c5c5c5;
-      text-decoration: none;
-      text-transform: uppercase;
-      transition: 0.2s ease;
+	@media (max-width: 992px) {
+		background-position: right 60% center;
+	}
 
-      &:hover {
-        border: 1px solid white;
-        color: white;
-      }
-    }
-  }
+	@media (max-width: 600px) {
+		background-position: right 53% center;
+	}
+
+	.row {
+		margin-bottom: 60px;
+		margin-top: 60px;
+
+		a {
+			margin-top: 10px;
+			display: inline-block;
+			padding: 0.8rem 1.3rem;
+			border: 1px solid #c5c5c5;
+			text-decoration: none;
+			text-transform: uppercase;
+			transition: 0.2s ease;
+
+			&:hover {
+				border: 1px solid white;
+				color: white;
+			}
+		}
+	}
+}
+
+.header#white h1,
+.header#white h2,
+.header#white h3,
+.header#white h4,
+.header#white h5,
+.header#white h6,
+.header#white p {
+	color: #000;
+
+}
+
+.header#white::before {
+	background: #fff;
+}
+
+@media (max-width: 992px) {
+
+	.header#white::after {
+		background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.76)), to(rgba(255, 255, 255, 0)));
+		background-image: linear-gradient(to right, rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0));
+	}
 }
