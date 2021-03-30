@@ -40,19 +40,34 @@
   }
 
   .frm_submit { margin-top: -9.5px; }
+
+  .with_frm_style .frm_message, .frm_error_style {
+    text-align: center;
+    p {
+      margin: 10px auto;
+    }
+  }
 }
 
 .contact-us {
+  padding: 2rem 0;
+
+  .wp-block-columns.is-style-center {
+    @media(min-width: 1001px) {
+      justify-content: center;
+    }
+  }
+
   .wp-block-columns {
     display: flex;
-    justify-content: space-between;
-    
+    flex-wrap: wrap;
+
     figure, img {
       min-width: 100%;
     }
+
     img {
       @media (min-width: 1160px) {
-        min-height: 430px;
         object-fit: cover;
       }
     }
@@ -61,6 +76,24 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin: 1em;
+      max-width: 280px;
+    }
+
+    a {
+      color: red;
+    }
+
+    h3 {
+      margin: 0;
+    }
+
+    p {
+      margin-top: 0;
+    }
+
+    @media(max-width: 672px) {
+      justify-content: center;
     }
   }
 

@@ -104,15 +104,18 @@ body.search-results {
 		}
 	}
 
-	figure {
-		grid-row: 1/4;
+  .site-content {
+    figure {
+      grid-row: 1/4;
 
-		img {
-			height: 100%;
-			min-width: 280px;
-			object-fit: cover;
-		}
-	}
+      img {
+        height: 100%;
+        min-width: 280px;
+        object-fit: cover;
+      }
+    }
+  }
+
 
 	.entry-header {
 		text-transform: uppercase;
