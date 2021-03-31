@@ -20,6 +20,10 @@ function my_acf_init_block_types() {
 		'pages',
 		__( 'Sidor', 'temat-child' )
 	);
+	t_create_block(
+		'pagesexternal',
+		__( 'Externa sidor', 'temat-child' )
+	);
 }
 add_action( 'acf/init', 'my_acf_init_block_types' );
 
