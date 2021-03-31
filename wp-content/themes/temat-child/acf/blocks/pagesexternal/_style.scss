@@ -1,0 +1,38 @@
+.pages-external {
+	padding: 55px 15px 40px 15px;
+	min-height: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+
+	.row {
+		margin: auto;
+		justify-content: center;
+
+		a {
+
+			img {
+				min-height: 250px;
+				width: 100%;
+				object-fit: cover;
+				min-width: 100%;
+			}
+		}
+	}
+
+	a {
+		text-decoration: none;
+		color: black;
+	}
+
+	p {
+		margin-bottom: 1rem;
+		max-width: 400px;
+	}
+
+	h2 {
+		font-size: 23px;
+	}
+
+}
