@@ -5,8 +5,13 @@
 			while ( have_posts() ) :
 				the_post();
 				?>
-				<?php $text = get_field( 'blog_text', 'options' ); ?>
-				<?php $image = wp_get_attachment_image_src( get_field( 'blog_bg', 'options' ), 'blogHeader' ); ?>
+				<?php if ( get_locale() === 'en_GB' ) : ?>
+					<?php $text = get_field( 'blog_text_en', 'options' ); ?>
+					<?php $image = wp_get_attachment_image_src( get_field( 'blog_bg_en', 'options' ), 'blogHeader' ); ?>
+				<?php else : ?>
+					<?php $text = get_field( 'blog_text', 'options' ); ?>
+					<?php $image = wp_get_attachment_image_src( get_field( 'blog_bg', 'options' ), 'blogHeader' ); ?>
+				<?php endif; ?>
 				<header <?php echo $image[0] ? 'style="background-image:url(' . $image[0] . ')"' : ''; ?>>
 					<div class="container">
 						<div class="row">

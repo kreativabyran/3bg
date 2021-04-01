@@ -42,13 +42,20 @@
 									?>
 								</div>
 							</div>
-							<?php $automation_image = get_field( 'automation_image', 'options' ); ?>
-							<?php $automation_link = get_field( 'automation_link', 'options' ); ?>
+							<?php if ( get_locale() === 'en_GB' ) : ?>
+								<?php $automation_image = get_field( 'automation_image_en', 'options' ); ?>
+								<?php $automation_link = get_field( 'automation_link_en', 'options' ); ?>
+							<?php else : ?>
+								<?php $automation_image = get_field( 'automation_image', 'options' ); ?>
+								<?php $automation_link = get_field( 'automation_link', 'options' ); ?>
+							<?php endif; ?>
 							<?php if ( $automation_image && $automation_link ) : ?>
 								<div class="automation">
 									<?php $image = wp_get_attachment_image( $automation_image, 'articleThumbnail' ); ?>
 									<?php if ( $image && $automation_link ) : ?>
-										<a href="<?php echo $automation_link['url']; ?>" target="_self">
+										<a
+											href="<?php echo $automation_link['url']; ?>"
+											target="<?php echo $automation_link['target'] === '_blank' ? '_blank' : '_self'; ?>">
 											<figure>
 												<?php echo $image; ?>
 											</figure>
