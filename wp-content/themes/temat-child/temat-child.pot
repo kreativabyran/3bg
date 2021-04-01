@@ -1,0 +1,59 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Temat Child\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-01 07:23+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.2; wp-5.7\n"
+"X-Domain: temat-child"
+
+#. Author of the theme
+msgid "Anonym"
+msgstr ""
+
+#: config/images.php:6
+msgid "Artikeltumnagel"
+msgstr ""
+
+#: config/images.php:7
+msgid "Blogheader"
+msgstr ""
+
+#: acf/register-block.php:25
+msgid "Externa sidor"
+msgstr ""
+
+#: acf/register-block.php:17
+msgid "Herospace"
+msgstr ""
+
+#: templates/content-none.php:14
+msgid "Inget kunde hittar"
+msgstr ""
+
+#: acf/register-block.php:21
+msgid "Sidor"
+msgstr ""
+
+#: config/menu.php:15
+msgid "Sök"
+msgstr ""
+
+#. Name of the theme
+msgid "Temat Child"
+msgstr ""
+
+#: templates/content-none.php:17
+msgid ""
+"Tyvärr, men ingenting matchade dina söktermer. Försök igen med några olika "
+"nyckelord."
+msgstr ""
