@@ -18,11 +18,13 @@ body {
 	overflow-x: hidden;
 	font-weight: 400;
 	line-height: 1.4;
-  > div {
-    @media(max-width: 991.98px) {
-      margin-top: 120px;
-    }
-  }
+
+	> div {
+
+		@media (max-width: 991.98px) {
+			margin-top: 120px;
+		}
+	}
 
 }
 
@@ -47,9 +49,9 @@ h1,
 	font-size: 42px;
 	line-height: 1.1;
 
-  @media(max-width: 600px) {
-    font-size: 33px;
-  }
+	@media (max-width: 600px) {
+		font-size: 33px;
+	}
 }
 
 h2,
@@ -157,69 +159,120 @@ input {
 }
 
 .is-style-col-image {
-  padding: $main-padding;
-  max-width: $outer-max-width;
-  width: 100%;
-  margin: auto;
+	padding: $main-padding;
+	max-width: $outer-max-width;
+	width: 100%;
+	margin: auto;
 
-  img, video {
-    height: min-content;
-    max-height: 380px;
-    object-fit: cover;
-    width: 100%;
-    min-height: 380px;
-    max-width: 550px;
-  }
-  figure {
-    margin: 0;
-  }
-  .wp-block-columns {
-    align-items: center;
-    padding: $column-padding;
-  }
+	img,
+	video {
+		height: min-content;
+		max-height: 380px;
+		object-fit: cover;
+		width: 100%;
+		min-height: 380px;
+		max-width: 550px;
+	}
 
-  h1, p {
-    max-width: 500px;
-  }
-  h1 {
-    margin: 0 0 1rem 0;
-  }
-  p {
-    margin-bottom: 1rem;
-    
-  }
+	figure {
+		margin: 0;
+	}
 
-  @media (min-width: 600px) and (max-width: 935px) {
-    .wp-block-columns {
-      flex-direction: column;
-    }
-    h1, p {
-      max-width: 100%;
-    }
-    img, video {
-      min-width: 100%;
-    }
-    .wp-block-column {
-      flex-basis: unset !important;
-      flex-grow: unset !important;
-      min-width: 100%;
-      margin: 0;
-    }
-  }
+	.wp-block-columns {
+		align-items: center;
+		padding: $column-padding;
+	}
 
-  @media(max-width: 935px) {
-    padding: $main-padding $main-padding 0 $main-padding;
-    h1 {
-      margin-top: 1rem;
-    }
-  }
+	h1,
+	p {
+		max-width: 500px;
+	}
 
-  @media (max-width: 500px) {
-    padding: $main-padding 15px 0 15px;
-    img, video {
-      max-height: 100px ;
-      min-height: 300px;
-    }
-  }
+	h1 {
+		margin: 0 0 1rem 0;
+	}
 
+	p {
+		margin-bottom: 1rem;
+
+	}
+
+	@media (min-width: 600px) and (max-width: 935px) {
+
+		.wp-block-columns {
+			flex-direction: column;
+		}
+
+		h1,
+		p {
+			max-width: 100%;
+		}
+
+		img,
+		video {
+			min-width: 100%;
+		}
+
+		.wp-block-column {
+			flex-basis: unset !important;
+			flex-grow: unset !important;
+			min-width: 100%;
+			margin: 0;
+		}
+	}
+
+	@media (max-width: 935px) {
+		padding: $main-padding $main-padding 0 $main-padding;
+
+		h1 {
+			margin-top: 1rem;
+		}
+	}
+
+	@media (max-width: 500px) {
+		padding: $main-padding 15px 0 15px;
+
+		img,
+		video {
+			max-height: 100px;
+			min-height: 300px;
+		}
+	}
+
+}
+
+.wp-block-columns.is-style-columns-small-content {
+
+	.wp-block-column:last-child {
+		margin-left: 40px;
+		padding-left: 40px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		border-left: solid 1px #000;
+		width: 364px;
+		max-width: 100%;
+
+		> * {
+			width: 324px;
+		}
+	}
+
+	a {
+		color: #e5493a;
+	}
+
+	@media (max-width: 782.98px) {
+		display: block;
+
+		.wp-block-column:last-child {
+			width: 100%;
+			margin: 0;
+			padding: 20px 0;
+			border: 0;
+
+			> * {
+				width: auto;
+			}
+		}
+	}
 }

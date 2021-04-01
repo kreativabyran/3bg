@@ -37,4 +37,8 @@ registerBlockStyle('core/paragraph', {
   isDefault: false,
 });
 
-
+registerBlockStyle('core/columns', {
+  name: 'columns-small-content',
+  label: __('Smalt innehåll', 'temat-child'),
+  isDefault: false,
+});
