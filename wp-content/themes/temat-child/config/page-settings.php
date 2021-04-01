@@ -142,16 +142,32 @@ function get_page_footer( $pagetype = 'standard' ) {
 	ob_start();
 	switch ( $pagetype ) {
 		case 'front':
-			$content = get_field( 'footer_front', 'options' );
+			if ( get_locale() === 'en_GB' ) :
+				$content = get_field( 'footer_front_en', 'options' );
+			else :
+				$content = get_field( 'footer_front', 'options' );
+			endif;
 			break;
 		case 'frojd':
-			$content = get_field( 'footer_frojd', 'options' );
+			if ( get_locale() === 'en_GB' ) :
+				$content = get_field( 'footer_frojd_en', 'options' );
+			else :
+				$content = get_field( 'footer_frojd', 'options' );
+			endif;
 			break;
 		case 'iml':
-			$content = get_field( 'footer_iml', 'options' );
+			if ( get_locale() === 'en_GB' ) :
+				$content = get_field( 'footer_iml_en', 'options' );
+			else :
+				$content = get_field( 'footer_iml', 'options' );
+			endif;
 			break;
 		default:
-			$content = get_field( 'footer', 'options' );
+			if ( get_locale() === 'en_GB' ) :
+				$content = get_field( 'footer_en', 'options' );
+			else :
+				$content = get_field( 'footer', 'options' );
+			endif;
 
 	}
 	?>
