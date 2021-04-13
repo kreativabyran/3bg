@@ -28,13 +28,19 @@
 		grid-column: span 6 / span 6;
 	}
 
-	#frm_field_6_container,
-	#frm_field_11_container {
+	/*
+  #frm_field_6_container,
+  #frm_field_11_container,
+  */
+	.name {
 		grid-row: 1;
 	}
 
-	#frm_field_9_container,
-	#frm_field_14_container {
+	/*
+  #frm_field_9_container,
+  #frm_field_14_container,
+  */
+	.message {
 		grid-row: 1/3;
 
 		textarea {
