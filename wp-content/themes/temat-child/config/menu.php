@@ -12,7 +12,7 @@ add_filter(
 					'hide_current' => 1,
 				)
 			);
-			$items .= '<li class="search">' . get_search_form( array( 'echo' => false ) ) . '<button class="search-toggle">' . __( 'Sök', 'temat-child' ) . '</button></li>';
+			$items .= '<li class="search">' . get_search_form( array( 'echo' => false ) ) . '<button class="search-toggle">' . pll__( 'Sök' ) . '</button></li>';
 		}
 		return $items;
 	},

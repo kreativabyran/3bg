@@ -14,7 +14,7 @@
 						<?php endif; ?>
 						<h2><?php echo esc_html( $page['title'] ); ?></h2>
 						<div><?php echo apply_filters( 'the_excerpt', $page['excerpt'] ); ?></div>
-						<div class="is-style-arrowlink"><?php echo esc_html( 'Läs mer', 'temat-child' ); ?></div>
+						<div class="is-style-arrowlink"><?php pll_e( 'Läs mer' ); ?></div>
 					</article>
 				</a>
 

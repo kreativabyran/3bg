@@ -11,9 +11,9 @@
 
 <section class="no-results not-found">
 	<header class="page-header">
-		<h1 class="page-title"><?php esc_html_e( 'Inget kunde hittar', 'temat-child' ); ?></h1>
+		<h1 class="page-title"><?php pll_e( 'Inget kunde hittar' ); ?></h1>
 	</header><!-- .page-header -->
 	<div class="page-content">
-		<?php esc_html_e( 'Tyvärr, men ingenting matchade dina söktermer. Försök igen med några olika nyckelord.', 'temat-child' ); ?>
+		<?php pll_e( 'Tyvärr, men ingenting matchade dina söktermer. Försök igen med några olika nyckelord.' ); ?>
 	</div><!-- .page-content -->
 </section><!-- .no-results -->
