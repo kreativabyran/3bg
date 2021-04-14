@@ -17,7 +17,7 @@ function t_get_latest_post( $exclude = false ) {
 		ob_start();
 		?>
 		<div class="latest-posts">
-			<?php echo esc_html( 'SENASTE INLÄGGEN', 'temat-child' ); ?>
+			<?php pll_e( 'SENASTE INLÄGGEN' ); ?>
 			<ul>
 			<?php foreach ( $posts as $post ) : ?>
 				<li>

@@ -34,3 +34,14 @@ if ( file_exists( TEMAT_CHILD_DIR . 'config/-include-config.php' ) ) {
 if ( file_exists( TEMAT_CHILD_DIR . 'acf/acf.php' ) ) {
 	include_once TEMAT_CHILD_DIR . 'acf/acf.php';
 }
+
+add_action(
+	'init',
+	function() {
+		pll_register_string( 'temat-child', 'Läs mer' );
+		pll_register_string( 'temat-child', 'SENASTE INLÄGGEN' );
+		pll_register_string( 'temat-child', 'Sök' );
+		pll_register_string( 'temat-child', 'Inget kunde hittar' );
+		pll_register_string( 'temat-child', 'Tyvärr, men ingenting matchade dina söktermer. Försök igen med några olika nyckelord.' );
+	}
+);
