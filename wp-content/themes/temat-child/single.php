@@ -27,7 +27,6 @@
 					<div class="row">
 						<div class="col-sm-8 col-xs-12">
 							<article>
-								<?php echo get_the_date(); ?>
 								<?php the_content(); ?>
 							</article>
 						</div>
