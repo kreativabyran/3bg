@@ -19,66 +19,89 @@ li.search {
 		background: #fff;
 		width: 230px;
 		right: 72px;
-    top: 34px;
+		top: 34px;
 
-    .search-field {
-      padding: 0.7rem 1rem;
-      margin-top: -6px;
-      border-radius: 0;
-      outline: none;
-      box-shadow: none;
-      border: 1px solid #d1d1d1;
-    }
-    .search-submit {
-      position: absolute;
-      right: -57px;
-      top: -0.4rem;
-      bottom: 0;
-      padding: 0 2rem 0 2rem;
-      background: rgb(31, 31, 31);
-      color: rgb(233, 233, 233);
-      border: none;
-      cursor: pointer;
-      font-size: 12px;
-      text-transform: uppercase;
-    }
+		.search-field {
+			padding: 0.7rem 1rem;
+			margin-top: -6px;
+			border-radius: 0;
+			outline: none;
+			box-shadow: none;
+			border: 1px solid #d1d1d1;
+		}
+
+		.search-submit {
+			position: absolute;
+			right: -57px;
+			top: -0.4rem;
+			bottom: 0;
+			padding: 0 2rem 0 2rem;
+			background: rgb(31, 31, 31);
+			color: rgb(233, 233, 233);
+			border: none;
+			cursor: pointer;
+			font-size: 12px;
+			text-transform: uppercase;
+		}
 	}
 
 }
 
 button.search-toggle {
-  border: none;
-  outline: none;
-  background: transparent url(img/search-solid.svg) no-repeat center center;
-  color: transparent;
-  cursor: pointer;
-  opacity: 0.5;
-  transition: all 0.2s ease;
-  &:hover {
-    opacity: 0.8;
-  }
+	border: none;
+	outline: none;
+	background: transparent url(img/search-solid.svg) no-repeat center center;
+	color: transparent;
+	cursor: pointer;
+	opacity: 0.5;
+	transition: all 0.2s ease;
+
+	&:hover {
+		opacity: 0.8;
+	}
 }
 
 // Small screens
 #top-menu-mobile {
-  button.search-toggle {
-    margin-left: -8px;
-    display: none;
-  }
 
-  .search-form {
-		position: absolute;
-    display: block;
-		left: 0;
-    right: unset;
-    top: -180px;
-    @media(max-width: 600px) {
-      width: 179px;
+	button.search-toggle {
+		margin-left: -8px;
+		display: none;
+	}
 
-      .search-submit {
-        padding: 0 1rem 0 1rem;
-      }
-    }
+	#top-menu {
+		padding: 0;
+
+		> li {
+			padding: 0;
+
+			.search {
+				margin-top: 15px;
+			}
+		}
+	}
+
+	.search-form {
+		position: relative;
+		display: block;
+		right: 0;
+		top: 0;
+		width: auto;
+
+		@media (max-width: 400px) {
+
+			label {
+				width: 140px;
+				display: inline-block;
+			}
+		}
+
+		.search-submit {
+			position: relative;
+			right: 3px;
+			padding: calc(0.783rem + 1px) 1rem;
+			top: -1px;
+		}
 	}
 }
 

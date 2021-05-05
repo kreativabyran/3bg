@@ -23,67 +23,73 @@ body.search-results {
 		}
 	}
 
-  main header {
-    position: relative;
-    color: white;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right center;
-    width: $outer-max-width;
-    margin: auto;
-    min-height: 280px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 60px 0;
+	main header {
+		position: relative;
+		color: white;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: right center;
+		width: $outer-max-width;
+		margin: auto;
+		min-height: 280px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 60px 0;
 
-    &::before {
-      content: '';
-      background: black;
-      position: absolute;
-      left: -100vw;
-      width: 200vw;
-      top: 0;
-      bottom: 0;
-      z-index: -1;
-    }
+		&::before {
+			content: "";
+			background: black;
+			position: absolute;
+			left: -100vw;
+			width: 200vw;
+			top: 0;
+			bottom: 0;
+			z-index: -1;
+		}
 
-    .container {
-      position: relative;
-      z-index: 100;
+		.container {
+			position: relative;
+			z-index: 100;
 
-      h1 {
-        margin: 0;
-        color: white;
-      }
+			h1 {
+				margin: 0;
+				color: white;
+			}
 
-      a, p {
-        color: #d8d8d8;
-        max-width: 400px;
-      }
-    }
+			a,
+			p {
+				color: #d8d8d8;
+				max-width: 400px;
+			}
+
+			p {
+				font-size: 15px;
+			}
+		}
 
 
-    @media (max-width: 768px) {
-      max-width: 100%;
-      background-size: cover;
-      justify-content: center !important;
-      background-position: left center;
-      &::after {
-        content: '';
-        background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0));
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-      }
-    }
+		@media (max-width: 768px) {
+			max-width: 100%;
+			background-size: cover;
+			justify-content: center !important;
+			background-position: left center;
 
-    @media(max-width: 540px) {
-      background-position: left 40% center;
-    }
-  }
+			&::after {
+				content: "";
+				background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0));
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+			}
+		}
+
+		@media (max-width: 540px) {
+			background-position: left 40% center;
+		}
+	}
 }
 
 // Blog posts
@@ -104,17 +110,18 @@ body.search-results {
 		}
 	}
 
-  .site-content {
-    figure {
-      grid-row: 1/4;
+	.site-content {
 
-      img {
-        height: 100%;
-        min-width: 280px;
-        object-fit: cover;
-      }
-    }
-  }
+		figure {
+			grid-row: 1/4;
+
+			img {
+				height: 100%;
+				min-width: 280px;
+				object-fit: cover;
+			}
+		}
+	}
 
 
 	.entry-header {
@@ -132,6 +139,7 @@ body.search-results {
 
 	.entry-content {
 		margin-bottom: 10px;
+		font-size: 15px;
 	}
 
 }
@@ -141,6 +149,26 @@ body.single-post {
 
 	article {
 		max-width: 700px;
+
+		p {
+			font-size: 15px;
+		}
+
+		p.is-style-preamble {
+			margin-bottom: 2rem;
+			font-size: 19px;
+			font-weight: 700;
+		}
+
+		figure.wp-block-image {
+			margin-top: 3em;
+			margin-bottom: 3em;
+		}
+
+		blockquote.wp-block-quote {
+			margin-top: 3em;
+			margin-bottom: 3em;
+		}
 	}
 
 	h1 {
@@ -151,8 +179,13 @@ body.single-post {
 		margin: 1.5rem 0 -0.5rem 0;
 	}
 
-	p.is-style-preamble {
-		margin-bottom: 2rem;
-		// border: 1px solid
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		margin-bottom: 0.3em;
 	}
+
 }
