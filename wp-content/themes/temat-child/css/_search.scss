@@ -88,6 +88,13 @@ button.search-toggle {
 		top: 0;
 		width: auto;
 
+		input[type="search"],
+		input[type="submit"] {
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+		}
+
 		@media (max-width: 400px) {
 
 			label {
